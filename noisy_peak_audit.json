@@ -1,0 +1,731 @@
+[
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "noisy",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "cleanmel80",
+    "source_peak": 0.33245849609375,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0000917936478795,
+    "changed": true
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "pguse",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "flowse",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "sense",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "pase",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "stupase",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "darcse",
+    "source_peak": 0.332489013671875,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0253",
+    "model": "clean",
+    "source_peak": 0.299468994140625,
+    "noisy_peak": 0.332489013671875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "noisy",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "cleanmel80",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "pguse",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "flowse",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "sense",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "pase",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "stupase",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "darcse",
+    "source_peak": 0.89642333984375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0076",
+    "model": "clean",
+    "source_peak": 0.865570068359375,
+    "noisy_peak": 0.89642333984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "noisy",
+    "source_peak": 1.0,
+    "noisy_peak": 1.0,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "cleanmel80",
+    "source_peak": 0.999969482421875,
+    "noisy_peak": 1.0,
+    "scale": 1.000030518509476,
+    "changed": true
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "pguse",
+    "source_peak": 0.999969482421875,
+    "noisy_peak": 1.0,
+    "scale": 1.000030518509476,
+    "changed": true
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "flowse",
+    "source_peak": 0.999969482421875,
+    "noisy_peak": 1.0,
+    "scale": 1.000030518509476,
+    "changed": true
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "sense",
+    "source_peak": 1.0,
+    "noisy_peak": 1.0,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "pase",
+    "source_peak": 0.999969482421875,
+    "noisy_peak": 1.0,
+    "scale": 1.000030518509476,
+    "changed": true
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "stupase",
+    "source_peak": 1.0,
+    "noisy_peak": 1.0,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "darcse",
+    "source_peak": 1.0,
+    "noisy_peak": 1.0,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "DNS1 With-Reverb",
+    "id": "dns1_0104",
+    "model": "clean",
+    "source_peak": 0.98974609375,
+    "noisy_peak": 1.0,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "noisy",
+    "source_peak": 0.03924560546875,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "cleanmel80",
+    "source_peak": 0.039215087890625,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0007782101167315,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "pguse",
+    "source_peak": 0.039215087890625,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0007782101167315,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "flowse",
+    "source_peak": 0.401824951171875,
+    "noisy_peak": 0.03924560546875,
+    "scale": 0.09766841345788714,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "sense",
+    "source_peak": 0.024566650390625,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.5975155279503106,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "pase",
+    "source_peak": 0.03924560546875,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "stupase",
+    "source_peak": 0.03924560546875,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "darcse",
+    "source_peak": 0.039215087890625,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0007782101167315,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1050",
+    "model": "clean",
+    "source_peak": 0.634033203125,
+    "noisy_peak": 0.03924560546875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "noisy",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "cleanmel80",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "pguse",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "flowse",
+    "source_peak": 0.403106689453125,
+    "noisy_peak": 0.903411865234375,
+    "scale": 2.2411234764175942,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "sense",
+    "source_peak": 1.0,
+    "noisy_peak": 0.903411865234375,
+    "scale": 0.903411865234375,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "pase",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "stupase",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "darcse",
+    "source_peak": 0.903411865234375,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_722",
+    "model": "clean",
+    "source_peak": 0.759307861328125,
+    "noisy_peak": 0.903411865234375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "noisy",
+    "source_peak": 0.891998291015625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "cleanmel80",
+    "source_peak": 0.891998291015625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "pguse",
+    "source_peak": 0.8919677734375,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0000342137676201,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "flowse",
+    "source_peak": 0.77978515625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.1439026299311208,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "sense",
+    "source_peak": 0.595855712890625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.4970038412291933,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "pase",
+    "source_peak": 0.891998291015625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "stupase",
+    "source_peak": 0.891998291015625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "darcse",
+    "source_peak": 0.891998291015625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_1279",
+    "model": "clean",
+    "source_peak": 0.334136962890625,
+    "noisy_peak": 0.891998291015625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "noisy",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "cleanmel80",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "pguse",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "flowse",
+    "source_peak": 0.39227294921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.54768943519527,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "sense",
+    "source_peak": 0.610076904296875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 0.9951478165174329,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "pase",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "stupase",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "darcse",
+    "source_peak": 0.60711669921875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2962",
+    "model": "clean",
+    "source_peak": 0.432342529296875,
+    "noisy_peak": 0.60711669921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "noisy",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "cleanmel80",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "pguse",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "flowse",
+    "source_peak": 0.331329345703125,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.6392189370912775,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "sense",
+    "source_peak": 0.4873046875,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.1145415831663326,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "pase",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "stupase",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "darcse",
+    "source_peak": 0.543121337890625,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_3357",
+    "model": "clean",
+    "source_peak": 0.45599365234375,
+    "noisy_peak": 0.543121337890625,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "noisy",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "cleanmel80",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "pguse",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "flowse",
+    "source_peak": 0.444610595703125,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.5783512938430915,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "sense",
+    "source_peak": 0.9107666015625,
+    "noisy_peak": 0.701751708984375,
+    "scale": 0.7705066344993968,
+    "changed": true
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "pase",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "stupase",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "darcse",
+    "source_peak": 0.701751708984375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "LibriTTS test-clean",
+    "id": "utt_2131",
+    "model": "clean",
+    "source_peak": 0.691497802734375,
+    "noisy_peak": 0.701751708984375,
+    "scale": 1.0,
+    "changed": false
+  }
+]
