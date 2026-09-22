@@ -6,24 +6,22 @@ Three DNS1 With-Reverb and three LibriTTS test-clean simulated examples, each wi
 
 ## Selection
 
-These are deliberately selected qualitative examples, not a random sample or aggregate evaluation.
+These are deliberately selected qualitative examples, not a random sample or aggregate evaluation. No human listening evaluation was performed for this selection.
 
-- DNS1: SNR <= 5 dB; noisy DNSMOS OVRL <= 2.0; relative spectral occupancy >= 35%; absolute occupancy >= 35%.
-- LibriTTS: SNR <= 0 dB; noisy DNSMOS OVRL <= 2.0; relative spectral occupancy >= 50%; absolute occupancy >= 35%.
+- DNS1: PSG-SE must have the highest DNSMOS OVRL AND the highest UTMOS among all seven enhanced systems. Noisy and Dry Clean Reference are excluded from the model ranking. SNR <= 8 dB (previously 5); noisy OVRL <= 2.0; relative spectral occupancy >= 19% (previously 35%); absolute occupancy >= 22% (previously 35%). Three examples satisfy these criteria.
+- LibriTTS remains unchanged: SNR <= 0 dB; noisy OVRL <= 2.0; relative occupancy >= 50%; absolute occupancy >= 35%; PSG-SE versus StuPASE differences <= 0.061 in each quality metric. The three examples rank first on the selection composite, but are NOT all first on DNSMOS and UTMOS individually. Only utt_4655 satisfies that stricter condition; completing a three-example simultaneous-best LibriTTS selection requires a similarity-constraint change.
 - Relative occupancy is the fraction of noisy STFT bins within 40 dB of its maximum. Absolute occupancy is the fraction above -60 dBFS. STFT uses 512 samples and a 128-sample hop. These are visual density proxies, not direct noise measurements.
-- Preserve the noisy-input criteria above. LibriTTS additionally requires absolute PSG-SE versus StuPASE differences <= 0.061 in each of DNSMOS OVRL and UTMOS. DNS1 retains its only three density-eligible candidates, including the existing 0.2624 UTMOS gap for dns1_0175.
-- Prefer the largest PSG-SE composite margin over the strongest competing enhanced system. The composite gives 50% weight to quality (DNSMOS OVRL and UTMOS) and 50% to fidelity (ECAPA, SpeechBERTScore, LPS and inverse WER), using within-utterance percentile ranks across the seven enhanced systems. Ties use smaller mean metric differences. This is a heuristic for selecting promising listening examples; no human listening evaluation was performed for this selection.
-- PSG-SE ranks first on this composite for all three selected LibriTTS examples. DNS1 composite ranks are 1, 2 and 2; superiority on every example or metric is not claimed.
-- All low-SNR candidate scores, thresholds and eligibility decisions are in `selection_audit.json`. Dense noisy spectrograms were also visually checked.
+- Within eligible samples, prefer the largest PSG-SE composite margin over the strongest competing enhanced system, then smaller mean StuPASE metric gaps. The composite gives 50% weight to quality (DNSMOS OVRL and UTMOS) and 50% to fidelity (ECAPA, SpeechBERTScore, LPS and inverse WER), using within-utterance percentile ranks across seven enhanced systems. For DNS1, the two individual quality scores must both lead before this sorting is applied.
+- All candidate scores and eligibility decisions are in `selection_audit.json`.
 
-| Dataset | ID | SNR (dB) | Absolute DNSMOS OVRL difference | Absolute UTMOS difference | PSG-SE composite rank |
-|---|---|---:|---:|---:|---:|
-| DNS1 With-Reverb | dns1_0268 | 0 | 0.0097 | 0.0068 | 1 |
-| DNS1 With-Reverb | dns1_0125 | 3 | 0.0518 | 0.0602 | 2 |
-| DNS1 With-Reverb | dns1_0175 | 4 | 0.0930 | 0.2624 | 2 |
-| LibriTTS test-clean | utt_4441 | -1 | 0.0539 | 0.0477 | 1 |
-| LibriTTS test-clean | utt_4655 | -2 | 0.0063 | 0.0243 | 1 |
-| LibriTTS test-clean | utt_4133 | -5 | 0.0474 | 0.0315 | 1 |
+| Dataset | ID | SNR (dB) | Absolute DNSMOS gap to StuPASE | Absolute UTMOS gap to StuPASE | Both quality metrics best |
+|---|---|---:|---:|---:|---|
+| DNS1 With-Reverb | dns1_0020 | 7 | 0.0716 | 0.0913 | True |
+| DNS1 With-Reverb | dns1_0043 | 8 | 0.1385 | 0.0989 | True |
+| DNS1 With-Reverb | dns1_0014 | 8 | 0.0529 | 0.1714 | True |
+| LibriTTS test-clean | utt_4441 | -1 | 0.0539 | 0.0477 | False |
+| LibriTTS test-clean | utt_4655 | -2 | 0.0063 | 0.0243 | True |
+| LibriTTS test-clean | utt_4133 | -5 | 0.0474 | 0.0315 | False |
 
 ## Audio processing
 

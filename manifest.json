@@ -2,7 +2,7 @@
   "title": "PSG-SE Audio Demo",
   "inference_seed": 34,
   "cherry_picked": true,
-  "selection_rule": "Filter for low SNR, low noisy DNSMOS OVRL and dense noisy spectrograms; retain close PSG-SE versus StuPASE DNSMOS OVRL and UTMOS scores (LibriTTS differences <= 0.061 each; DNS1 retains its only three density-eligible candidates), then maximize PSG-SE composite margin over the strongest competing enhanced system. Composite is 50% quality (DNSMOS OVRL, UTMOS) and 50% fidelity (ECAPA, SBS, LPS, inverse WER), using within-utterance percentile ranks. This is a selection proxy, not a listening-test result. See selection_audit.json for all candidates and thresholds.",
+  "selection_rule": "DNS1 requires PSG-SE to lead all six competing enhanced models on both DNSMOS OVRL and UTMOS, SNR <= 8 dB, relative density >= 0.19, absolute density >= 0.22, and noisy OVRL <= 2.0. LibriTTS retains the earlier dense-noise and close-score composite selection; simultaneous first place is NOT required there. Within eligible candidates, rank by PSG-SE composite margin, then smaller StuPASE metric gaps. Composite is 50% quality and 50% fidelity percentile ranks. See selection_audit.json and README.md for full criteria.",
   "density_definition": "Fraction of STFT bins within 40 dB of the input maximum (relative) and above -60 dBFS (absolute). Density is a visual proxy, not a direct noise measurement.",
   "spectrogram": {
     "sample_rate_hz": 16000,
@@ -66,150 +66,155 @@
       "rank": 1,
       "dataset": "dns1",
       "dataset_label": "DNS1 With-Reverb",
-      "id": "dns1_0268",
-      "snr_db": 0.0,
-      "relative_density": 0.5309177824444036,
-      "absolute_density": 0.5218001803550311,
-      "noisy_dnsmos_ovrl": 1.0678426027297974,
-      "absolute_metric_differences": {
-        "ovrl": 0.009736776351928711,
-        "utmos": 0.006819009780883789
+      "id": "dns1_0020",
+      "snr_db": 7.0,
+      "relative_density": 0.2339498063835696,
+      "absolute_density": 0.22413949119911133,
+      "noisy_dnsmos_ovrl": 1.1214662790298462,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.07156777381896973,
+        "utmos": 0.06574678421020508
       },
-      "mean_absolute_difference": 0.00827789306640625,
+      "absolute_metric_differences": {
+        "ovrl": 0.07156777381896973,
+        "utmos": 0.09133481979370117
+      },
+      "mean_absolute_difference": 0.08145129680633545,
       "eligible": true,
       "composite_scores": {
-        "cleanmel80": 0.4375,
-        "pguse": 0.14583333333333331,
-        "flowse": 0.020833333333333332,
-        "sense": 0.75,
-        "pase": 0.5104166666666666,
-        "stupase": 0.78125,
-        "psgse": 0.8541666666666667
+        "cleanmel80": 0.5520833333333333,
+        "pguse": 0.34375,
+        "flowse": 0.010416666666666666,
+        "sense": 0.625,
+        "pase": 0.3958333333333333,
+        "stupase": 0.6458333333333334,
+        "psgse": 0.9270833333333334
       },
-      "psg_composite_margin": 0.07291666666666674,
+      "psg_composite_margin": 0.28125,
       "psg_composite_rank": 1,
       "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
           "label": "Noisy",
-          "audio": "assets/dns1/dns1_0268/01_noisy.wav",
-          "spectrogram": "assets/dns1/dns1_0268/01_noisy.png",
+          "audio": "assets/dns1/dns1_0020/01_noisy.wav",
+          "spectrogram": "assets/dns1/dns1_0020/01_noisy.png",
           "metrics": {
-            "ovrl": 1.067843,
-            "utmos": 1.375011,
-            "ecapa": 0.677328,
-            "sbs": 0.582199,
-            "lps": 0.144444,
-            "wer": 0.222222
+            "ovrl": 1.121466,
+            "utmos": 1.254439,
+            "ecapa": 0.74975,
+            "sbs": 0.846665,
+            "lps": 0.856,
+            "wer": 0.0
           }
         },
         {
           "key": "cleanmel80",
           "label": "CleanMel-80",
-          "audio": "assets/dns1/dns1_0268/02_cleanmel80.wav",
-          "spectrogram": "assets/dns1/dns1_0268/02_cleanmel80.png",
+          "audio": "assets/dns1/dns1_0020/02_cleanmel80.wav",
+          "spectrogram": "assets/dns1/dns1_0020/02_cleanmel80.png",
           "metrics": {
-            "ovrl": 3.034864,
-            "utmos": 1.811114,
-            "ecapa": 0.69018,
-            "sbs": 0.742715,
-            "lps": 0.722222,
-            "wer": 0.222222
+            "ovrl": 3.220899,
+            "utmos": 3.410961,
+            "ecapa": 0.867051,
+            "sbs": 0.914978,
+            "lps": 0.92,
+            "wer": 0.037037
           }
         },
         {
           "key": "pguse",
           "label": "PGUSE",
-          "audio": "assets/dns1/dns1_0268/03_pguse.wav",
-          "spectrogram": "assets/dns1/dns1_0268/03_pguse.png",
+          "audio": "assets/dns1/dns1_0020/03_pguse.wav",
+          "spectrogram": "assets/dns1/dns1_0020/03_pguse.png",
           "metrics": {
-            "ovrl": 2.768012,
-            "utmos": 1.31936,
-            "ecapa": 0.511054,
-            "sbs": 0.645906,
-            "lps": 0.633333,
-            "wer": 0.333333
+            "ovrl": 2.895528,
+            "utmos": 2.13058,
+            "ecapa": 0.785134,
+            "sbs": 0.855907,
+            "lps": 0.944,
+            "wer": 0.074074
           }
         },
         {
           "key": "flowse",
           "label": "FlowSE",
-          "audio": "assets/dns1/dns1_0268/04_flowse.wav",
-          "spectrogram": "assets/dns1/dns1_0268/04_flowse.png",
+          "audio": "assets/dns1/dns1_0020/04_flowse.wav",
+          "spectrogram": "assets/dns1/dns1_0020/04_flowse.png",
           "metrics": {
-            "ovrl": 2.096845,
-            "utmos": 1.271298,
-            "ecapa": 0.514132,
-            "sbs": 0.542309,
-            "lps": 0.211111,
-            "wer": 0.37037
+            "ovrl": 2.65728,
+            "utmos": 1.395278,
+            "ecapa": 0.704437,
+            "sbs": 0.774361,
+            "lps": 0.88,
+            "wer": 0.074074
           }
         },
         {
           "key": "sense",
           "label": "SenSE",
-          "audio": "assets/dns1/dns1_0268/05_sense.wav",
-          "spectrogram": "assets/dns1/dns1_0268/05_sense.png",
+          "audio": "assets/dns1/dns1_0020/05_sense.wav",
+          "spectrogram": "assets/dns1/dns1_0020/05_sense.png",
           "metrics": {
-            "ovrl": 3.381999,
-            "utmos": 3.374333,
-            "ecapa": 0.700724,
-            "sbs": 0.798916,
-            "lps": 0.822222,
-            "wer": 0.222222
+            "ovrl": 3.314619,
+            "utmos": 4.218155,
+            "ecapa": 0.816691,
+            "sbs": 0.884793,
+            "lps": 0.928,
+            "wer": 0.037037
           }
         },
         {
           "key": "pase",
           "label": "PASE",
-          "audio": "assets/dns1/dns1_0268/06_pase.wav",
-          "spectrogram": "assets/dns1/dns1_0268/06_pase.png",
+          "audio": "assets/dns1/dns1_0020/06_pase.wav",
+          "spectrogram": "assets/dns1/dns1_0020/06_pase.png",
           "metrics": {
-            "ovrl": 3.097173,
-            "utmos": 1.390022,
-            "ecapa": 0.639412,
-            "sbs": 0.824484,
-            "lps": 0.844444,
-            "wer": 0.222222
+            "ovrl": 2.743074,
+            "utmos": 1.521665,
+            "ecapa": 0.718347,
+            "sbs": 0.900768,
+            "lps": 0.952,
+            "wer": 0.0
           }
         },
         {
           "key": "stupase",
           "label": "StuPASE",
-          "audio": "assets/dns1/dns1_0268/07_stupase.wav",
-          "spectrogram": "assets/dns1/dns1_0268/07_stupase.png",
+          "audio": "assets/dns1/dns1_0020/07_stupase.wav",
+          "spectrogram": "assets/dns1/dns1_0020/07_stupase.png",
           "metrics": {
-            "ovrl": 3.38358,
-            "utmos": 3.366441,
-            "ecapa": 0.555518,
-            "sbs": 0.84188,
-            "lps": 0.844444,
-            "wer": 0.148148
+            "ovrl": 3.367801,
+            "utmos": 4.192567,
+            "ecapa": 0.732331,
+            "sbs": 0.920497,
+            "lps": 0.928,
+            "wer": 0.037037
           }
         },
         {
           "key": "psgse",
           "label": "PSG-SE",
-          "audio": "assets/dns1/dns1_0268/08_psgse.wav",
-          "spectrogram": "assets/dns1/dns1_0268/08_psgse.png",
+          "audio": "assets/dns1/dns1_0020/08_psgse.wav",
+          "spectrogram": "assets/dns1/dns1_0020/08_psgse.png",
           "metrics": {
-            "ovrl": 3.373843,
-            "utmos": 3.37326,
-            "ecapa": 0.718849,
-            "sbs": 0.847833,
-            "lps": 0.877778,
-            "wer": 0.185185
+            "ovrl": 3.439369,
+            "utmos": 4.283902,
+            "ecapa": 0.825696,
+            "sbs": 0.927659,
+            "lps": 0.968,
+            "wer": 0.037037
           }
         },
         {
           "key": "clean",
           "label": "Dry Clean Reference",
-          "audio": "assets/dns1/dns1_0268/09_clean.wav",
-          "spectrogram": "assets/dns1/dns1_0268/09_clean.png",
+          "audio": "assets/dns1/dns1_0020/09_clean.wav",
+          "spectrogram": "assets/dns1/dns1_0020/09_clean.png",
           "metrics": {
-            "ovrl": 3.338238,
-            "utmos": 3.516025,
+            "ovrl": 2.985126,
+            "utmos": 4.40368,
             "ecapa": 1.0,
             "sbs": 1.0,
             "lps": 1.0,
@@ -222,150 +227,155 @@
       "rank": 2,
       "dataset": "dns1",
       "dataset_label": "DNS1 With-Reverb",
-      "id": "dns1_0125",
-      "snr_db": 3.0,
-      "relative_density": 0.3969714084230168,
-      "absolute_density": 0.5317883543071464,
-      "noisy_dnsmos_ovrl": 1.0758200883865356,
-      "absolute_metric_differences": {
-        "ovrl": 0.05176377296447754,
-        "utmos": 0.06017255783081055
+      "id": "dns1_0043",
+      "snr_db": 8.0,
+      "relative_density": 0.24482727417397085,
+      "absolute_density": 0.4455798975907938,
+      "noisy_dnsmos_ovrl": 1.2054424285888672,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.10452628135681152,
+        "utmos": 0.0989384651184082
       },
-      "mean_absolute_difference": 0.05596816539764404,
+      "absolute_metric_differences": {
+        "ovrl": 0.13849711418151855,
+        "utmos": 0.0989384651184082
+      },
+      "mean_absolute_difference": 0.11871778964996338,
       "eligible": true,
       "composite_scores": {
-        "cleanmel80": 0.4583333333333333,
-        "pguse": 0.20833333333333331,
-        "flowse": 0.0,
-        "sense": 0.7708333333333333,
-        "pase": 0.5625,
-        "stupase": 0.75,
-        "psgse": 0.75
+        "cleanmel80": 0.5208333333333333,
+        "pguse": 0.16666666666666666,
+        "flowse": 0.041666666666666664,
+        "sense": 0.75,
+        "pase": 0.375,
+        "stupase": 0.7291666666666666,
+        "psgse": 0.9166666666666667
       },
-      "psg_composite_margin": -0.02083333333333326,
-      "psg_composite_rank": 2,
+      "psg_composite_margin": 0.16666666666666674,
+      "psg_composite_rank": 1,
       "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
           "label": "Noisy",
-          "audio": "assets/dns1/dns1_0125/01_noisy.wav",
-          "spectrogram": "assets/dns1/dns1_0125/01_noisy.png",
+          "audio": "assets/dns1/dns1_0043/01_noisy.wav",
+          "spectrogram": "assets/dns1/dns1_0043/01_noisy.png",
           "metrics": {
-            "ovrl": 1.07582,
-            "utmos": 1.654827,
-            "ecapa": 0.190708,
-            "sbs": 0.423816,
-            "lps": 0.009901,
-            "wer": 1.0
+            "ovrl": 1.205442,
+            "utmos": 1.475628,
+            "ecapa": 0.724266,
+            "sbs": 0.694228,
+            "lps": 0.188976,
+            "wer": 0.0
           }
         },
         {
           "key": "cleanmel80",
           "label": "CleanMel-80",
-          "audio": "assets/dns1/dns1_0125/02_cleanmel80.wav",
-          "spectrogram": "assets/dns1/dns1_0125/02_cleanmel80.png",
+          "audio": "assets/dns1/dns1_0043/02_cleanmel80.wav",
+          "spectrogram": "assets/dns1/dns1_0043/02_cleanmel80.png",
           "metrics": {
-            "ovrl": 2.759499,
-            "utmos": 1.319085,
-            "ecapa": 0.281304,
-            "sbs": 0.533326,
-            "lps": 0.178218,
-            "wer": 0.857143
+            "ovrl": 3.249105,
+            "utmos": 2.455435,
+            "ecapa": 0.614496,
+            "sbs": 0.810456,
+            "lps": 0.795276,
+            "wer": 0.033333
           }
         },
         {
           "key": "pguse",
           "label": "PGUSE",
-          "audio": "assets/dns1/dns1_0125/03_pguse.wav",
-          "spectrogram": "assets/dns1/dns1_0125/03_pguse.png",
+          "audio": "assets/dns1/dns1_0043/03_pguse.wav",
+          "spectrogram": "assets/dns1/dns1_0043/03_pguse.png",
           "metrics": {
-            "ovrl": 2.492136,
-            "utmos": 1.254348,
-            "ecapa": 0.229902,
-            "sbs": 0.448439,
-            "lps": 0.217822,
-            "wer": 1.464286
+            "ovrl": 2.980886,
+            "utmos": 1.473886,
+            "ecapa": 0.523452,
+            "sbs": 0.659372,
+            "lps": 0.779528,
+            "wer": 0.233333
           }
         },
         {
           "key": "flowse",
           "label": "FlowSE",
-          "audio": "assets/dns1/dns1_0125/04_flowse.wav",
-          "spectrogram": "assets/dns1/dns1_0125/04_flowse.png",
+          "audio": "assets/dns1/dns1_0043/04_flowse.wav",
+          "spectrogram": "assets/dns1/dns1_0043/04_flowse.png",
           "metrics": {
-            "ovrl": 1.824337,
-            "utmos": 1.248123,
-            "ecapa": 0.113139,
-            "sbs": 0.346512,
-            "lps": 0.108911,
-            "wer": 2.0
+            "ovrl": 1.964125,
+            "utmos": 1.275272,
+            "ecapa": 0.559909,
+            "sbs": 0.560285,
+            "lps": 0.448819,
+            "wer": 0.2
           }
         },
         {
           "key": "sense",
           "label": "SenSE",
-          "audio": "assets/dns1/dns1_0125/05_sense.wav",
-          "spectrogram": "assets/dns1/dns1_0125/05_sense.png",
+          "audio": "assets/dns1/dns1_0043/05_sense.wav",
+          "spectrogram": "assets/dns1/dns1_0043/05_sense.png",
           "metrics": {
-            "ovrl": 3.481426,
-            "utmos": 4.164489,
-            "ecapa": 0.327273,
-            "sbs": 0.545,
-            "lps": 0.237624,
-            "wer": 0.964286
+            "ovrl": 3.340753,
+            "utmos": 3.387979,
+            "ecapa": 0.749739,
+            "sbs": 0.806559,
+            "lps": 0.92126,
+            "wer": 0.1
           }
         },
         {
           "key": "pase",
           "label": "PASE",
-          "audio": "assets/dns1/dns1_0125/06_pase.wav",
-          "spectrogram": "assets/dns1/dns1_0125/06_pase.png",
+          "audio": "assets/dns1/dns1_0043/06_pase.wav",
+          "spectrogram": "assets/dns1/dns1_0043/06_pase.png",
           "metrics": {
-            "ovrl": 2.611967,
-            "utmos": 1.33779,
-            "ecapa": 0.126103,
-            "sbs": 0.637406,
-            "lps": 0.277228,
-            "wer": 0.928571
+            "ovrl": 2.819143,
+            "utmos": 1.563011,
+            "ecapa": 0.664366,
+            "sbs": 0.828073,
+            "lps": 0.858268,
+            "wer": 0.133333
           }
         },
         {
           "key": "stupase",
           "label": "StuPASE",
-          "audio": "assets/dns1/dns1_0125/07_stupase.wav",
-          "spectrogram": "assets/dns1/dns1_0125/07_stupase.png",
+          "audio": "assets/dns1/dns1_0043/07_stupase.wav",
+          "spectrogram": "assets/dns1/dns1_0043/07_stupase.png",
           "metrics": {
-            "ovrl": 3.166282,
-            "utmos": 2.935234,
-            "ecapa": 0.338129,
-            "sbs": 0.633511,
-            "lps": 0.257426,
-            "wer": 0.892857
+            "ovrl": 3.306782,
+            "utmos": 3.505253,
+            "ecapa": 0.683377,
+            "sbs": 0.837268,
+            "lps": 0.874016,
+            "wer": 0.1
           }
         },
         {
           "key": "psgse",
           "label": "PSG-SE",
-          "audio": "assets/dns1/dns1_0125/08_psgse.wav",
-          "spectrogram": "assets/dns1/dns1_0125/08_psgse.png",
+          "audio": "assets/dns1/dns1_0043/08_psgse.wav",
+          "spectrogram": "assets/dns1/dns1_0043/08_psgse.png",
           "metrics": {
-            "ovrl": 3.218046,
-            "utmos": 2.995406,
-            "ecapa": 0.40794,
-            "sbs": 0.624298,
-            "lps": 0.237624,
-            "wer": 0.964286
+            "ovrl": 3.445279,
+            "utmos": 3.604192,
+            "ecapa": 0.715986,
+            "sbs": 0.850423,
+            "lps": 0.897638,
+            "wer": 0.1
           }
         },
         {
           "key": "clean",
           "label": "Dry Clean Reference",
-          "audio": "assets/dns1/dns1_0125/09_clean.wav",
-          "spectrogram": "assets/dns1/dns1_0125/09_clean.png",
+          "audio": "assets/dns1/dns1_0043/09_clean.wav",
+          "spectrogram": "assets/dns1/dns1_0043/09_clean.png",
           "metrics": {
-            "ovrl": 3.324059,
-            "utmos": 4.272192,
+            "ovrl": 3.374652,
+            "utmos": 4.057707,
             "ecapa": 1.0,
             "sbs": 1.0,
             "lps": 1.0,
@@ -378,150 +388,155 @@
       "rank": 3,
       "dataset": "dns1",
       "dataset_label": "DNS1 With-Reverb",
-      "id": "dns1_0175",
-      "snr_db": 4.0,
-      "relative_density": 0.5393551527557188,
-      "absolute_density": 0.7666929814434019,
-      "noisy_dnsmos_ovrl": 1.1147218942642212,
-      "absolute_metric_differences": {
-        "ovrl": 0.0929574966430664,
-        "utmos": 0.2624225616455078
+      "id": "dns1_0014",
+      "snr_db": 8.0,
+      "relative_density": 0.1933043974800221,
+      "absolute_density": 0.2866178439148899,
+      "noisy_dnsmos_ovrl": 1.3104790449142456,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.052858591079711914,
+        "utmos": 0.17136001586914062
       },
-      "mean_absolute_difference": 0.1776900291442871,
+      "absolute_metric_differences": {
+        "ovrl": 0.052858591079711914,
+        "utmos": 0.17136001586914062
+      },
+      "mean_absolute_difference": 0.11210930347442627,
       "eligible": true,
       "composite_scores": {
-        "cleanmel80": 0.375,
-        "pguse": 0.1875,
-        "flowse": 0.041666666666666664,
-        "sense": 0.8854166666666667,
-        "pase": 0.47916666666666663,
-        "stupase": 0.7395833333333333,
-        "psgse": 0.7916666666666667
+        "cleanmel80": 0.6041666666666666,
+        "pguse": 0.35416666666666663,
+        "flowse": 0.0,
+        "sense": 0.6041666666666667,
+        "pase": 0.3958333333333333,
+        "stupase": 0.6979166666666667,
+        "psgse": 0.84375
       },
-      "psg_composite_margin": -0.09375,
-      "psg_composite_rank": 2,
+      "psg_composite_margin": 0.14583333333333326,
+      "psg_composite_rank": 1,
       "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
           "label": "Noisy",
-          "audio": "assets/dns1/dns1_0175/01_noisy.wav",
-          "spectrogram": "assets/dns1/dns1_0175/01_noisy.png",
+          "audio": "assets/dns1/dns1_0014/01_noisy.wav",
+          "spectrogram": "assets/dns1/dns1_0014/01_noisy.png",
           "metrics": {
-            "ovrl": 1.114722,
-            "utmos": 1.306208,
-            "ecapa": 0.418479,
-            "sbs": 0.543943,
-            "lps": 0.098361,
-            "wer": 0.26087
+            "ovrl": 1.310479,
+            "utmos": 1.285357,
+            "ecapa": 0.760406,
+            "sbs": 0.794085,
+            "lps": 0.774194,
+            "wer": 0.04
           }
         },
         {
           "key": "cleanmel80",
           "label": "CleanMel-80",
-          "audio": "assets/dns1/dns1_0175/02_cleanmel80.wav",
-          "spectrogram": "assets/dns1/dns1_0175/02_cleanmel80.png",
+          "audio": "assets/dns1/dns1_0014/02_cleanmel80.wav",
+          "spectrogram": "assets/dns1/dns1_0014/02_cleanmel80.png",
           "metrics": {
-            "ovrl": 3.161475,
-            "utmos": 1.574795,
-            "ecapa": 0.151859,
-            "sbs": 0.665517,
-            "lps": 0.5,
-            "wer": 0.26087
+            "ovrl": 3.245984,
+            "utmos": 3.538565,
+            "ecapa": 0.748041,
+            "sbs": 0.887758,
+            "lps": 0.975806,
+            "wer": 0.04
           }
         },
         {
           "key": "pguse",
           "label": "PGUSE",
-          "audio": "assets/dns1/dns1_0175/03_pguse.wav",
-          "spectrogram": "assets/dns1/dns1_0175/03_pguse.png",
+          "audio": "assets/dns1/dns1_0014/03_pguse.wav",
+          "spectrogram": "assets/dns1/dns1_0014/03_pguse.png",
           "metrics": {
-            "ovrl": 2.300642,
-            "utmos": 1.306257,
-            "ecapa": 0.235895,
-            "sbs": 0.557683,
-            "lps": 0.647541,
-            "wer": 0.608696
+            "ovrl": 2.830866,
+            "utmos": 1.858364,
+            "ecapa": 0.677928,
+            "sbs": 0.816355,
+            "lps": 0.959677,
+            "wer": 0.04
           }
         },
         {
           "key": "flowse",
           "label": "FlowSE",
-          "audio": "assets/dns1/dns1_0175/04_flowse.wav",
-          "spectrogram": "assets/dns1/dns1_0175/04_flowse.png",
+          "audio": "assets/dns1/dns1_0014/04_flowse.wav",
+          "spectrogram": "assets/dns1/dns1_0014/04_flowse.png",
           "metrics": {
-            "ovrl": 2.273614,
-            "utmos": 1.261478,
-            "ecapa": 0.243413,
-            "sbs": 0.390851,
-            "lps": 0.295082,
-            "wer": 1.217391
+            "ovrl": 2.423234,
+            "utmos": 1.483743,
+            "ecapa": 0.59408,
+            "sbs": 0.717239,
+            "lps": 0.862903,
+            "wer": 0.12
           }
         },
         {
           "key": "sense",
           "label": "SenSE",
-          "audio": "assets/dns1/dns1_0175/05_sense.wav",
-          "spectrogram": "assets/dns1/dns1_0175/05_sense.png",
+          "audio": "assets/dns1/dns1_0014/05_sense.wav",
+          "spectrogram": "assets/dns1/dns1_0014/05_sense.png",
           "metrics": {
-            "ovrl": 3.366601,
-            "utmos": 4.087372,
-            "ecapa": 0.563222,
-            "sbs": 0.801497,
-            "lps": 0.811475,
-            "wer": 0.173913
+            "ovrl": 3.334582,
+            "utmos": 4.148244,
+            "ecapa": 0.798046,
+            "sbs": 0.86217,
+            "lps": 0.959677,
+            "wer": 0.04
           }
         },
         {
           "key": "pase",
           "label": "PASE",
-          "audio": "assets/dns1/dns1_0175/06_pase.wav",
-          "spectrogram": "assets/dns1/dns1_0175/06_pase.png",
+          "audio": "assets/dns1/dns1_0014/06_pase.wav",
+          "spectrogram": "assets/dns1/dns1_0014/06_pase.png",
           "metrics": {
-            "ovrl": 2.865036,
-            "utmos": 1.450042,
-            "ecapa": 0.493136,
-            "sbs": 0.826756,
-            "lps": 0.786885,
-            "wer": 0.217391
+            "ovrl": 2.724716,
+            "utmos": 1.519917,
+            "ecapa": 0.71237,
+            "sbs": 0.884031,
+            "lps": 0.975806,
+            "wer": 0.04
           }
         },
         {
           "key": "stupase",
           "label": "StuPASE",
-          "audio": "assets/dns1/dns1_0175/07_stupase.wav",
-          "spectrogram": "assets/dns1/dns1_0175/07_stupase.png",
+          "audio": "assets/dns1/dns1_0014/07_stupase.wav",
+          "spectrogram": "assets/dns1/dns1_0014/07_stupase.png",
           "metrics": {
-            "ovrl": 3.218519,
-            "utmos": 4.187646,
-            "ecapa": 0.423724,
-            "sbs": 0.853817,
-            "lps": 0.803279,
-            "wer": 0.304348
+            "ovrl": 3.400449,
+            "utmos": 4.160596,
+            "ecapa": 0.673327,
+            "sbs": 0.904465,
+            "lps": 0.967742,
+            "wer": 0.04
           }
         },
         {
           "key": "psgse",
           "label": "PSG-SE",
-          "audio": "assets/dns1/dns1_0175/08_psgse.wav",
-          "spectrogram": "assets/dns1/dns1_0175/08_psgse.png",
+          "audio": "assets/dns1/dns1_0014/08_psgse.wav",
+          "spectrogram": "assets/dns1/dns1_0014/08_psgse.png",
           "metrics": {
-            "ovrl": 3.311477,
-            "utmos": 3.925223,
-            "ecapa": 0.537822,
-            "sbs": 0.841293,
-            "lps": 0.803279,
-            "wer": 0.173913
+            "ovrl": 3.453308,
+            "utmos": 4.331956,
+            "ecapa": 0.801366,
+            "sbs": 0.91428,
+            "lps": 0.951613,
+            "wer": 0.04
           }
         },
         {
           "key": "clean",
           "label": "Dry Clean Reference",
-          "audio": "assets/dns1/dns1_0175/09_clean.wav",
-          "spectrogram": "assets/dns1/dns1_0175/09_clean.png",
+          "audio": "assets/dns1/dns1_0014/09_clean.wav",
+          "spectrogram": "assets/dns1/dns1_0014/09_clean.png",
           "metrics": {
-            "ovrl": 3.49539,
-            "utmos": 4.439747,
+            "ovrl": 3.156236,
+            "utmos": 4.478159,
             "ecapa": 1.0,
             "sbs": 1.0,
             "lps": 1.0,
@@ -539,6 +554,11 @@
       "relative_density": 0.7879158833559218,
       "absolute_density": 0.755117387312552,
       "noisy_dnsmos_ovrl": 1.2957779169082642,
+      "both_quality_metrics_best": false,
+      "quality_metric_leads": {
+        "ovrl": -0.061078786849975586,
+        "utmos": 0.030714988708496094
+      },
       "absolute_metric_differences": {
         "ovrl": 0.053856611251831055,
         "utmos": 0.04767036437988281
@@ -695,6 +715,11 @@
       "relative_density": 0.7759940216971165,
       "absolute_density": 0.6800190687247146,
       "noisy_dnsmos_ovrl": 1.8990567922592163,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.006278514862060547,
+        "utmos": 0.024329185485839844
+      },
       "absolute_metric_differences": {
         "ovrl": 0.006278514862060547,
         "utmos": 0.024329185485839844
@@ -851,6 +876,11 @@
       "relative_density": 0.9061588035019456,
       "absolute_density": 0.8883653534370947,
       "noisy_dnsmos_ovrl": 1.1653847694396973,
+      "both_quality_metrics_best": false,
+      "quality_metric_leads": {
+        "ovrl": 0.047380685806274414,
+        "utmos": -0.11710882186889648
+      },
       "absolute_metric_differences": {
         "ovrl": 0.047380685806274414,
         "utmos": 0.0314793586730957
