@@ -1,61 +1,41 @@
-# DARC-SE Audio Demo
+# PSG-SE Audio Demo
 
-This static page presents DNS1 With-Reverb examples 1, 6, and 8 from the
-original eight-example ranking, together with six
-selected LibriTTS test-clean simulated examples at SNR ≤ 5 dB. It includes
-audio and fixed-scale spectrograms for nine conditions.
+Live demo: https://kimdongyoon100.github.io/psg-se-demo/
 
-## Selection rule
+Three DNS1 With-Reverb and three LibriTTS test-clean simulated examples, each with nine audio conditions. The page and plot margins use a white background. Spectrograms retain the same magma color map and fixed -80 to 0 dB scale.
 
-Selection is not based on speaker similarity alone. For each utterance, the
-enhanced systems are ranked on:
+## Selection
 
-- DNSMOS OVRL and UTMOS for quality
-- ECAPA, SpeechBERTScore, LPS, and inverse WER for fidelity
+These are deliberately selected qualitative examples, not a random sample or aggregate evaluation.
 
-The quality and fidelity percentile means receive equal weight. Examples rank
-by DARC-SE's composite advantage over the strongest comparison system, with a
-small penalty for disagreement between its quality and fidelity scores. These examples are cherry-picked and must not be used in place of aggregate evaluation.
+- DNS1: SNR <= 5 dB; noisy DNSMOS OVRL <= 2.0; relative spectral occupancy >= 35%; absolute occupancy >= 35%.
+- LibriTTS: SNR <= 0 dB; noisy DNSMOS OVRL <= 2.0; relative spectral occupancy >= 50%; absolute occupancy >= 35%.
+- Relative occupancy is the fraction of noisy STFT bins within 40 dB of its maximum. Absolute occupancy is the fraction above -60 dBFS. STFT uses 512 samples and a 128-sample hop. These are visual density proxies, not direct noise measurements.
+- Among eligible samples, select the three smallest mean absolute PSG-SE versus StuPASE differences in DNSMOS OVRL and UTMOS. No requirement that PSG-SE outperform StuPASE is imposed.
+- All low-SNR candidate scores, thresholds and eligibility decisions are in `selection_audit.json`. Dense noisy spectrograms were also visually checked.
 
-PASE uses `I00_B_PASE OriginalAug11 epoch 100`, inference seed 34.
+| Dataset | ID | SNR (dB) | Absolute DNSMOS OVRL difference | Absolute UTMOS difference |
+|---|---|---:|---:|---:|
+| DNS1 With-Reverb | dns1_0268 | 0 | 0.0097 | 0.0068 |
+| DNS1 With-Reverb | dns1_0125 | 3 | 0.0518 | 0.0602 |
+| DNS1 With-Reverb | dns1_0175 | 4 | 0.0930 | 0.2624 |
+| LibriTTS test-clean | utt_4655 | -2 | 0.0063 | 0.0243 |
+| LibriTTS test-clean | utt_212 | -5 | 0.0123 | 0.0483 |
+| LibriTTS test-clean | utt_1706 | 0 | 0.0594 | 0.0190 |
 
-For LibriTTS, a sample is eligible only when DARC-SE exceeds every enhanced
-comparison system in both DNSMOS OVRL and ECAPA SpkSim, while also satisfying
-OVRL ≥ 3.0 and ECAPA ≥ 0.8. The six examples are ranked by the two improvement
-margins together with DARC-SE's absolute OVRL and ECAPA values.
+## Audio processing
 
-All enhanced-system audio copied into the demo is explicitly peak-matched to
-its paired noisy waveform. The noisy audio is unchanged, and the dry clean
-reference remains an unscaled reference. The exact per-file scale audit is in
-`noisy_peak_audit.json`.
+Enhanced audio is peak-matched to its paired noisy input. Noisy audio and dry clean references remain unchanged. `noisy_peak_audit.json` records per-file scales. All nine conditions are retained: Noisy, CleanMel-80, PGUSE, FlowSE, SenSE, PASE, StuPASE, PSG-SE, and Dry Clean Reference. PSG-SE is the renamed I2 w/o Gate model; this update does not change model weights or inference outputs. Inference seed is 34. PASE uses OriginalAug11 epoch 100.
 
-## Demo
-
-https://kimdongyoon100.github.io/darc-se-demo/
-
-## Local preview
+## Preview
 
 ```bash
 python -m http.server 8890
 ```
 
-Open `http://127.0.0.1:8890/`.
-
 ## Paper link
 
 ```latex
-% Add \usepackage{url} in the preamble if needed.
-Audio examples are available online.\footnote{\url{https://kimdongyoon100.github.io/darc-se-demo/}}
+% Add \usepackage{url} if neither url nor hyperref is loaded.
+Audio examples are available online.\footnote{\url{https://kimdongyoon100.github.io/psg-se-demo/}}
 ```
-
-## Fixed model order
-
-1. Noisy
-2. CleanMel-80
-3. PGUSE
-4. FlowSE
-5. SenSE
-6. PASE
-7. StuPASE
-8. DARC-SE (`I2 w/o Gate`)
-9. Dry Clean Reference

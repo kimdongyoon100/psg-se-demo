@@ -4,7 +4,7 @@ const examplesRoot = document.querySelector("#examples");
 
 function audioCard(item) {
   const card = document.createElement("div");
-  card.className = `audio-card ${item.key === "darcse" ? "darcse" : ""} ${item.key === "clean" ? "reference" : ""}`;
+  card.className = `audio-card ${item.key === "psgse" ? "psgse" : ""} ${item.key === "clean" ? "reference" : ""}`;
 
   const title = document.createElement("div");
   title.className = "card-title";
