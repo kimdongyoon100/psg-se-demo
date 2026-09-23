@@ -39,7 +39,7 @@ function sampleSection(example) {
   return section;
 }
 
-fetch("manifest.json")
+fetch("manifest.json", { cache: "no-store" })
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
