@@ -2,7 +2,7 @@
 
 Live demo: https://kimdongyoon100.github.io/psg-se-demo/
 
-Three DNS1 With-Reverb and three LibriTTS test-clean simulated examples, each with nine audio conditions. The page and plot margins use a white background. Spectrograms retain the same magma color map and fixed -80 to 0 dB scale.
+Three DNS1 With-Reverb and three Simulated test set examples (derived from LibriTTS test-clean), each with nine audio conditions. The page and plot margins use a white background. Spectrograms retain the same magma color map and fixed -80 to 0 dB scale.
 
 ## Selection and display order
 
@@ -17,16 +17,16 @@ These are deliberately selected qualitative examples, not a random sample or agg
 
 | Display order | Dataset | ID | SNR (dB) | PSG-SE DNSMOS OVRL | PSG-SE UTMOS |
 |---:|---|---|---:|---:|---:|
-| 1 | LibriTTS test-clean | utt_3418 | -2 | 3.4076 | 4.1470 |
-| 2 | LibriTTS test-clean | utt_2198 | -3 | 3.4382 | 4.1704 |
-| 3 | LibriTTS test-clean | utt_1639 | -1 | 3.3760 | 4.1846 |
+| 1 | Simulated test set | utt_3418 | -2 | 3.4076 | 4.1470 |
+| 2 | Simulated test set | utt_2198 | -3 | 3.4382 | 4.1704 |
+| 3 | Simulated test set | utt_1639 | -1 | 3.3760 | 4.1846 |
 | 4 | DNS1 With-Reverb | dns1_0020 | 7 | 3.4394 | 4.2839 |
 | 5 | DNS1 With-Reverb | dns1_0043 | 8 | 3.4453 | 3.6042 |
 | 6 | DNS1 With-Reverb | dns1_0014 | 8 | 3.4533 | 4.3320 |
 
 ## Audio processing
 
-Enhanced audio is peak-matched to its paired noisy input. Noisy audio and dry clean references remain unchanged. `noisy_peak_audit.json` records per-file scales. All nine conditions are retained: Noisy, CleanMel-80, PGUSE, FlowSE, SenSE, PASE, StuPASE, PSG-SE, and Dry Clean Reference. PSG-SE is the renamed I2 w/o Gate model; this update does not change model weights or inference outputs. Inference seed is 34. PASE uses OriginalAug11 epoch 100.
+Enhanced audio is peak-matched to its paired noisy input. Noisy audio and dry clean references remain unchanged. `noisy_peak_audit.json` records per-file scales. All nine conditions are retained: Noisy, CleanMel, PGUSE, FlowSE, SenSE, PASE, StuPASE, PSG-SE, and Dry Clean Reference. PSG-SE is the renamed I2 w/o Gate model; this update does not change model weights or inference outputs. Inference seed is 34. PASE uses OriginalAug11 epoch 100.
 
 ## Preview
 

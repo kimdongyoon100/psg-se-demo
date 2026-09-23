@@ -30,7 +30,7 @@
     },
     {
       "key": "cleanmel80",
-      "label": "CleanMel-80"
+      "label": "CleanMel"
     },
     {
       "key": "pguse",
@@ -65,7 +65,7 @@
     {
       "rank": 1,
       "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
+      "dataset_label": "Simulated test set",
       "id": "utt_3418",
       "snr_db": -2.0,
       "relative_density": 0.10818959676326538,
@@ -152,7 +152,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/libritts/utt_3418/02_cleanmel80.wav",
           "spectrogram": "assets/libritts/utt_3418/02_cleanmel80.png",
           "metrics": {
@@ -267,7 +267,7 @@
     {
       "rank": 2,
       "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
+      "dataset_label": "Simulated test set",
       "id": "utt_2198",
       "snr_db": -3.0,
       "relative_density": 0.23382801432698433,
@@ -354,7 +354,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/libritts/utt_2198/02_cleanmel80.wav",
           "spectrogram": "assets/libritts/utt_2198/02_cleanmel80.png",
           "metrics": {
@@ -469,7 +469,7 @@
     {
       "rank": 3,
       "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
+      "dataset_label": "Simulated test set",
       "id": "utt_1639",
       "snr_db": -1.0,
       "relative_density": 0.2138189758492177,
@@ -556,7 +556,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/libritts/utt_1639/02_cleanmel80.wav",
           "spectrogram": "assets/libritts/utt_1639/02_cleanmel80.png",
           "metrics": {
@@ -717,7 +717,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/dns1/dns1_0020/02_cleanmel80.wav",
           "spectrogram": "assets/dns1/dns1_0020/02_cleanmel80.png",
           "metrics": {
@@ -878,7 +878,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/dns1/dns1_0043/02_cleanmel80.wav",
           "spectrogram": "assets/dns1/dns1_0043/02_cleanmel80.png",
           "metrics": {
@@ -1039,7 +1039,7 @@
         },
         {
           "key": "cleanmel80",
-          "label": "CleanMel-80",
+          "label": "CleanMel",
           "audio": "assets/dns1/dns1_0014/02_cleanmel80.wav",
           "spectrogram": "assets/dns1/dns1_0014/02_cleanmel80.png",
           "metrics": {
