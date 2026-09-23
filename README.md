@@ -4,24 +4,25 @@ Live demo: https://kimdongyoon100.github.io/psg-se-demo/
 
 Three DNS1 With-Reverb and three LibriTTS test-clean simulated examples, each with nine audio conditions. The page and plot margins use a white background. Spectrograms retain the same magma color map and fixed -80 to 0 dB scale.
 
-## Selection
+## Selection and display order
 
-These are deliberately selected qualitative examples, not a random sample or aggregate evaluation. No human listening evaluation was performed for this selection.
+LibriTTS appears first (utt_3418, utt_2198, utt_1639), followed by the unchanged DNS1 With-Reverb examples (dns1_0020, dns1_0043, dns1_0014).
 
-- DNS1: PSG-SE must have the highest DNSMOS OVRL AND the highest UTMOS among all seven enhanced systems. Noisy and Dry Clean Reference are excluded from the model ranking. SNR <= 8 dB (previously 5); noisy OVRL <= 2.0; relative spectral occupancy >= 19% (previously 35%); absolute occupancy >= 22% (previously 35%). Three examples satisfy these criteria.
-- LibriTTS remains unchanged: SNR <= 0 dB; noisy OVRL <= 2.0; relative occupancy >= 50%; absolute occupancy >= 35%; PSG-SE versus StuPASE differences <= 0.061 in each quality metric. The three examples rank first on the selection composite, but are NOT all first on DNSMOS and UTMOS individually. Only utt_4655 satisfies that stricter condition; completing a three-example simultaneous-best LibriTTS selection requires a similarity-constraint change.
-- Relative occupancy is the fraction of noisy STFT bins within 40 dB of its maximum. Absolute occupancy is the fraction above -60 dBFS. STFT uses 512 samples and a 128-sample hop. These are visual density proxies, not direct noise measurements.
-- Within eligible samples, prefer the largest PSG-SE composite margin over the strongest competing enhanced system, then smaller mean StuPASE metric gaps. The composite gives 50% weight to quality (DNSMOS OVRL and UTMOS) and 50% to fidelity (ECAPA, SpeechBERTScore, LPS and inverse WER), using within-utterance percentile ranks across seven enhanced systems. For DNS1, the two individual quality scores must both lead before this sorting is applied.
-- All candidate scores and eligibility decisions are in `selection_audit.json`.
+These are deliberately selected qualitative examples, not a random sample or aggregate evaluation. No human listening evaluation was performed for this selection. All six samples have PSG-SE leading all six competing enhanced models on both DNSMOS OVRL and UTMOS. Noisy and Dry Clean Reference are not enhancement models and are excluded from that ranking.
 
-| Dataset | ID | SNR (dB) | Absolute DNSMOS gap to StuPASE | Absolute UTMOS gap to StuPASE | Both quality metrics best |
-|---|---|---:|---:|---:|---|
-| DNS1 With-Reverb | dns1_0020 | 7 | 0.0716 | 0.0913 | True |
-| DNS1 With-Reverb | dns1_0043 | 8 | 0.1385 | 0.0989 | True |
-| DNS1 With-Reverb | dns1_0014 | 8 | 0.0529 | 0.1714 | True |
-| LibriTTS test-clean | utt_4441 | -1 | 0.0539 | 0.0477 | False |
-| LibriTTS test-clean | utt_4655 | -2 | 0.0063 | 0.0243 | True |
-| LibriTTS test-clean | utt_4133 | -5 | 0.0474 | 0.0315 | False |
+- LibriTTS: SNR <= 0 dB; PSG-SE must exceed StuPASE on DNSMOS OVRL, UTMOS and ECAPA SpkSim, with lower dry-clean active-bin and full-spectrum MAE and higher spectral correlation. Among candidates also leading both quality metrics across models, choose the three lowest PSG-SE active-bin spectral MAEs. The reviewed 1,302 low-SNR examples yield 278 quality/SpkSim improvements, 224 additional spectral improvements and 15 satisfying the simultaneous-best condition. Previous LibriTTS density and tight StuPASE metric-gap constraints are not applied.
+- Spectral comparison: existing aligned audio, STFT 512/hop 128; per-waveform maximum-normalized log magnitude clipped at -60 dB, with active clean bins above -50 dB. Lower MAE is closer. This controls for overall gain. Displayed spectrograms use the unchanged fixed -80 to 0 dBFS scale.
+- DNS1: SNR <= 8 dB, noisy OVRL <= 2.0, relative spectral occupancy >= 19%, absolute occupancy >= 22%, and both quality metrics best. Selection and files are unchanged. Relative occupancy counts bins within 40 dB of the noisy maximum; absolute occupancy counts bins above -60 dBFS. These are visual proxies, not direct noise measurements. Eligible samples sort by PSG-SE composite margin (50% quality and 50% fidelity percentile ranks), then smaller mean StuPASE quality-metric gaps.
+- Candidate measurements and selection decisions are recorded in `selection_audit.json`.
+
+| Display order | Dataset | ID | SNR (dB) | PSG-SE DNSMOS OVRL | PSG-SE UTMOS |
+|---:|---|---|---:|---:|---:|
+| 1 | LibriTTS test-clean | utt_3418 | -2 | 3.4076 | 4.1470 |
+| 2 | LibriTTS test-clean | utt_2198 | -3 | 3.4382 | 4.1704 |
+| 3 | LibriTTS test-clean | utt_1639 | -1 | 3.3760 | 4.1846 |
+| 4 | DNS1 With-Reverb | dns1_0020 | 7 | 3.4394 | 4.2839 |
+| 5 | DNS1 With-Reverb | dns1_0043 | 8 | 3.4453 | 3.6042 |
+| 6 | DNS1 With-Reverb | dns1_0014 | 8 | 3.4533 | 4.3320 |
 
 ## Audio processing
 

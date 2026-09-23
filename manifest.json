@@ -2,7 +2,7 @@
   "title": "PSG-SE Audio Demo",
   "inference_seed": 34,
   "cherry_picked": true,
-  "selection_rule": "DNS1 requires PSG-SE to lead all six competing enhanced models on both DNSMOS OVRL and UTMOS, SNR <= 8 dB, relative density >= 0.19, absolute density >= 0.22, and noisy OVRL <= 2.0. LibriTTS retains the earlier dense-noise and close-score composite selection; simultaneous first place is NOT required there. Within eligible candidates, rank by PSG-SE composite margin, then smaller StuPASE metric gaps. Composite is 50% quality and 50% fidelity percentile ranks. See selection_audit.json and README.md for full criteria.",
+  "selection_rule": "LibriTTS appears first: reviewed low-SNR samples utt_3418, utt_2198, utt_1639, selected for the lowest dry-clean active-bin spectral MAE among candidates beating StuPASE in DNSMOS OVRL, UTMOS, ECAPA and spectral similarity, while leading all six competing enhanced models on both quality metrics. Former LibriTTS noise-density and metric-gap filters are not applied. DNS1 follows with unchanged samples and filters: SNR <= 8 dB, relative density >= 0.19, absolute density >= 0.22, noisy OVRL <= 2.0 and both quality metrics best. See README.md and selection_audit.json.",
   "density_definition": "Fraction of STFT bins within 40 dB of the input maximum (relative) and above -60 dBFS (absolute). Density is a visual proxy, not a direct noise measurement.",
   "spectrogram": {
     "sample_rate_hz": 16000,
@@ -64,6 +64,612 @@
   "examples": [
     {
       "rank": 1,
+      "dataset": "libritts",
+      "dataset_label": "LibriTTS test-clean",
+      "id": "utt_3418",
+      "snr_db": -2.0,
+      "relative_density": 0.10818959676326538,
+      "absolute_density": 0.1605106761910293,
+      "noisy_dnsmos_ovrl": 1.3420965671539307,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.032431840896606445,
+        "utmos": 0.20761823654174805
+      },
+      "absolute_metric_differences": {
+        "ovrl": 0.17343544960021973,
+        "utmos": 0.20761823654174805
+      },
+      "mean_absolute_difference": 0.1905268430709839,
+      "eligible": true,
+      "spectral_review": {
+        "both_quality_metrics_best": true,
+        "id": "utt_3418",
+        "snr_db": -2.0,
+        "duration_s": 12.89,
+        "metrics": {
+          "psgse": {
+            "ovrl": 3.4075927734375,
+            "utmos": 4.146949768066406,
+            "ecapa": 0.9790584445
+          },
+          "stupase": {
+            "ovrl": 3.2341573238372803,
+            "utmos": 3.939331531524658,
+            "ecapa": 0.9073762298
+          }
+        },
+        "gains": {
+          "ovrl": 0.17343544960021973,
+          "utmos": 0.20761823654174805,
+          "ecapa": 0.07168221470000002
+        },
+        "spectral": {
+          "psgse": {
+            "active_mae_db": 3.8264906643312635,
+            "full_mae_db": 2.0074871720347645,
+            "correlation": 0.9286968154129908
+          },
+          "stupase": {
+            "active_mae_db": 4.469911039897987,
+            "full_mae_db": 2.144782193122574,
+            "correlation": 0.9119108020481453
+          }
+        },
+        "spectral_eligible": true,
+        "noise_density": {
+          "relative_density": 0.10818959676326538,
+          "absolute_density": 0.1605106761910293
+        },
+        "noisy_ovrl": 1.3420965671539307,
+        "transcript": "Bles did not know yet that she was down; but soon he would come searching, for he came each hour, and she pressed her little hands against her breast to still the beating of her heart and the bursting wonder of her love."
+      },
+      "composite_scores": {
+        "cleanmel80": 0.46875,
+        "pguse": 0.5833333333333333,
+        "flowse": 0.08333333333333333,
+        "sense": 0.5520833333333334,
+        "pase": 0.5,
+        "stupase": 0.46875,
+        "psgse": 0.84375
+      },
+      "psg_composite_margin": 0.26041666666666674,
+      "psg_composite_rank": 1,
+      "items": [
+        {
+          "key": "noisy",
+          "label": "Noisy",
+          "audio": "assets/libritts/utt_3418/01_noisy.wav",
+          "spectrogram": "assets/libritts/utt_3418/01_noisy.png",
+          "metrics": {
+            "ovrl": 1.342097,
+            "utmos": 1.484306,
+            "ecapa": 0.862762,
+            "sbs": 0.847902,
+            "lps": 0.915584,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "cleanmel80",
+          "label": "CleanMel-80",
+          "audio": "assets/libritts/utt_3418/02_cleanmel80.wav",
+          "spectrogram": "assets/libritts/utt_3418/02_cleanmel80.png",
+          "metrics": {
+            "ovrl": 3.252225,
+            "utmos": 3.691175,
+            "ecapa": 0.971744,
+            "sbs": 0.945987,
+            "lps": 0.961039,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "pguse",
+          "label": "PGUSE",
+          "audio": "assets/libritts/utt_3418/03_pguse.wav",
+          "spectrogram": "assets/libritts/utt_3418/03_pguse.png",
+          "metrics": {
+            "ovrl": 3.207664,
+            "utmos": 3.920923,
+            "ecapa": 0.9839,
+            "sbs": 0.950352,
+            "lps": 0.967532,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "flowse",
+          "label": "FlowSE",
+          "audio": "assets/libritts/utt_3418/04_flowse.wav",
+          "spectrogram": "assets/libritts/utt_3418/04_flowse.png",
+          "metrics": {
+            "ovrl": 2.781301,
+            "utmos": 1.644329,
+            "ecapa": 0.888507,
+            "sbs": 0.890838,
+            "lps": 0.948052,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "sense",
+          "label": "SenSE",
+          "audio": "assets/libritts/utt_3418/05_sense.wav",
+          "spectrogram": "assets/libritts/utt_3418/05_sense.png",
+          "metrics": {
+            "ovrl": 3.375161,
+            "utmos": 3.85142,
+            "ecapa": 0.94144,
+            "sbs": 0.944084,
+            "lps": 0.961039,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "pase",
+          "label": "PASE",
+          "audio": "assets/libritts/utt_3418/06_pase.wav",
+          "spectrogram": "assets/libritts/utt_3418/06_pase.png",
+          "metrics": {
+            "ovrl": 3.359164,
+            "utmos": 3.566481,
+            "ecapa": 0.88644,
+            "sbs": 0.951715,
+            "lps": 0.980519,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "stupase",
+          "label": "StuPASE",
+          "audio": "assets/libritts/utt_3418/07_stupase.wav",
+          "spectrogram": "assets/libritts/utt_3418/07_stupase.png",
+          "metrics": {
+            "ovrl": 3.234157,
+            "utmos": 3.939332,
+            "ecapa": 0.907376,
+            "sbs": 0.942035,
+            "lps": 0.961039,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "psgse",
+          "label": "PSG-SE",
+          "audio": "assets/libritts/utt_3418/08_psgse.wav",
+          "spectrogram": "assets/libritts/utt_3418/08_psgse.png",
+          "metrics": {
+            "ovrl": 3.407593,
+            "utmos": 4.14695,
+            "ecapa": 0.979058,
+            "sbs": 0.959411,
+            "lps": 0.961039,
+            "wer": 0.023256
+          }
+        },
+        {
+          "key": "clean",
+          "label": "Dry Clean Reference",
+          "audio": "assets/libritts/utt_3418/09_clean.wav",
+          "spectrogram": "assets/libritts/utt_3418/09_clean.png",
+          "metrics": {
+            "ovrl": 3.310077,
+            "utmos": 4.418454,
+            "ecapa": 1.0,
+            "sbs": 1.0,
+            "lps": 1.0,
+            "wer": 0.023256
+          }
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "dataset": "libritts",
+      "dataset_label": "LibriTTS test-clean",
+      "id": "utt_2198",
+      "snr_db": -3.0,
+      "relative_density": 0.23382801432698433,
+      "absolute_density": 0.23841190698595138,
+      "noisy_dnsmos_ovrl": 1.111412763595581,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.023084163665771484,
+        "utmos": 0.007802009582519531
+      },
+      "absolute_metric_differences": {
+        "ovrl": 0.13071417808532715,
+        "utmos": 0.17682886123657227
+      },
+      "mean_absolute_difference": 0.1537715196609497,
+      "eligible": true,
+      "spectral_review": {
+        "both_quality_metrics_best": true,
+        "id": "utt_2198",
+        "snr_db": -3.0,
+        "duration_s": 5.06,
+        "metrics": {
+          "psgse": {
+            "ovrl": 3.4381561279296875,
+            "utmos": 4.170349597930908,
+            "ecapa": 0.9610515833
+          },
+          "stupase": {
+            "ovrl": 3.3074419498443604,
+            "utmos": 3.993520736694336,
+            "ecapa": 0.9152091742
+          }
+        },
+        "gains": {
+          "ovrl": 0.13071417808532715,
+          "utmos": 0.17682886123657227,
+          "ecapa": 0.045842409099999926
+        },
+        "spectral": {
+          "psgse": {
+            "active_mae_db": 4.166778922489308,
+            "full_mae_db": 3.250317325600517,
+            "correlation": 0.9022460189257616
+          },
+          "stupase": {
+            "active_mae_db": 5.481787276021862,
+            "full_mae_db": 3.743092035556509,
+            "correlation": 0.8773812085179056
+          }
+        },
+        "spectral_eligible": true,
+        "noise_density": {
+          "relative_density": 0.23382801432698433,
+          "absolute_density": 0.23841190698595138
+        },
+        "noisy_ovrl": 1.111412763595581,
+        "transcript": "I've no need for fine clothes in Mac's play this time, so I can afford a few duddies for myself."
+      },
+      "composite_scores": {
+        "cleanmel80": 0.65625,
+        "pguse": 0.8229166666666667,
+        "flowse": 0.08333333333333333,
+        "sense": 0.5104166666666667,
+        "pase": 0.3125,
+        "stupase": 0.3125,
+        "psgse": 0.8020833333333333
+      },
+      "psg_composite_margin": -0.02083333333333348,
+      "psg_composite_rank": 2,
+      "items": [
+        {
+          "key": "noisy",
+          "label": "Noisy",
+          "audio": "assets/libritts/utt_2198/01_noisy.wav",
+          "spectrogram": "assets/libritts/utt_2198/01_noisy.png",
+          "metrics": {
+            "ovrl": 1.111413,
+            "utmos": 1.333226,
+            "ecapa": 0.868458,
+            "sbs": 0.793083,
+            "lps": 0.708333,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "cleanmel80",
+          "label": "CleanMel-80",
+          "audio": "assets/libritts/utt_2198/02_cleanmel80.wav",
+          "spectrogram": "assets/libritts/utt_2198/02_cleanmel80.png",
+          "metrics": {
+            "ovrl": 3.371869,
+            "utmos": 4.016286,
+            "ecapa": 0.972977,
+            "sbs": 0.974569,
+            "lps": 1.0,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "pguse",
+          "label": "PGUSE",
+          "audio": "assets/libritts/utt_2198/03_pguse.wav",
+          "spectrogram": "assets/libritts/utt_2198/03_pguse.png",
+          "metrics": {
+            "ovrl": 3.415072,
+            "utmos": 4.162548,
+            "ecapa": 0.977445,
+            "sbs": 0.972935,
+            "lps": 1.0,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "flowse",
+          "label": "FlowSE",
+          "audio": "assets/libritts/utt_2198/04_flowse.wav",
+          "spectrogram": "assets/libritts/utt_2198/04_flowse.png",
+          "metrics": {
+            "ovrl": 2.811351,
+            "utmos": 2.297336,
+            "ecapa": 0.814238,
+            "sbs": 0.919232,
+            "lps": 0.958333,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "sense",
+          "label": "SenSE",
+          "audio": "assets/libritts/utt_2198/05_sense.wav",
+          "spectrogram": "assets/libritts/utt_2198/05_sense.png",
+          "metrics": {
+            "ovrl": 3.360496,
+            "utmos": 4.118566,
+            "ecapa": 0.928485,
+            "sbs": 0.961414,
+            "lps": 0.986111,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "pase",
+          "label": "PASE",
+          "audio": "assets/libritts/utt_2198/06_pase.wav",
+          "spectrogram": "assets/libritts/utt_2198/06_pase.png",
+          "metrics": {
+            "ovrl": 3.384988,
+            "utmos": 3.862295,
+            "ecapa": 0.866827,
+            "sbs": 0.949218,
+            "lps": 0.944444,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "stupase",
+          "label": "StuPASE",
+          "audio": "assets/libritts/utt_2198/07_stupase.wav",
+          "spectrogram": "assets/libritts/utt_2198/07_stupase.png",
+          "metrics": {
+            "ovrl": 3.307442,
+            "utmos": 3.993521,
+            "ecapa": 0.915209,
+            "sbs": 0.953807,
+            "lps": 0.972222,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "psgse",
+          "label": "PSG-SE",
+          "audio": "assets/libritts/utt_2198/08_psgse.wav",
+          "spectrogram": "assets/libritts/utt_2198/08_psgse.png",
+          "metrics": {
+            "ovrl": 3.438156,
+            "utmos": 4.17035,
+            "ecapa": 0.961052,
+            "sbs": 0.970694,
+            "lps": 0.986111,
+            "wer": 0.090909
+          }
+        },
+        {
+          "key": "clean",
+          "label": "Dry Clean Reference",
+          "audio": "assets/libritts/utt_2198/09_clean.wav",
+          "spectrogram": "assets/libritts/utt_2198/09_clean.png",
+          "metrics": {
+            "ovrl": 3.429615,
+            "utmos": 4.297357,
+            "ecapa": 1.0,
+            "sbs": 1.0,
+            "lps": 1.0,
+            "wer": 0.090909
+          }
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "dataset": "libritts",
+      "dataset_label": "LibriTTS test-clean",
+      "id": "utt_1639",
+      "snr_db": -1.0,
+      "relative_density": 0.2138189758492177,
+      "absolute_density": 0.2354742320510926,
+      "noisy_dnsmos_ovrl": 1.095348596572876,
+      "both_quality_metrics_best": true,
+      "quality_metric_leads": {
+        "ovrl": 0.08436155319213867,
+        "utmos": 0.018665790557861328
+      },
+      "absolute_metric_differences": {
+        "ovrl": 0.08436155319213867,
+        "utmos": 0.2138972282409668
+      },
+      "mean_absolute_difference": 0.14912939071655273,
+      "eligible": true,
+      "spectral_review": {
+        "both_quality_metrics_best": true,
+        "id": "utt_1639",
+        "snr_db": -1.0,
+        "duration_s": 3.82,
+        "metrics": {
+          "psgse": {
+            "ovrl": 3.3760390281677246,
+            "utmos": 4.184633255004883,
+            "ecapa": 0.9472316504
+          },
+          "stupase": {
+            "ovrl": 3.291677474975586,
+            "utmos": 3.970736026763916,
+            "ecapa": 0.8864431977
+          }
+        },
+        "gains": {
+          "ovrl": 0.08436155319213867,
+          "utmos": 0.2138972282409668,
+          "ecapa": 0.060788452699999995
+        },
+        "spectral": {
+          "psgse": {
+            "active_mae_db": 4.337950381385843,
+            "full_mae_db": 2.9104745000247676,
+            "correlation": 0.9113158019832404
+          },
+          "stupase": {
+            "active_mae_db": 4.956039735197556,
+            "full_mae_db": 3.3615049974588262,
+            "correlation": 0.889359782260046
+          }
+        },
+        "spectral_eligible": true,
+        "noise_density": {
+          "relative_density": 0.2138189758492177,
+          "absolute_density": 0.2354742320510926
+        },
+        "noisy_ovrl": 1.095348596572876,
+        "transcript": "Fortunately father is already out of meeting, so they can't discipline him."
+      },
+      "composite_scores": {
+        "cleanmel80": 0.53125,
+        "pguse": 0.71875,
+        "flowse": 0.08333333333333333,
+        "sense": 0.4895833333333333,
+        "pase": 0.38541666666666663,
+        "stupase": 0.5104166666666667,
+        "psgse": 0.78125
+      },
+      "psg_composite_margin": 0.0625,
+      "psg_composite_rank": 1,
+      "items": [
+        {
+          "key": "noisy",
+          "label": "Noisy",
+          "audio": "assets/libritts/utt_1639/01_noisy.wav",
+          "spectrogram": "assets/libritts/utt_1639/01_noisy.png",
+          "metrics": {
+            "ovrl": 1.095349,
+            "utmos": 1.611104,
+            "ecapa": 0.839431,
+            "sbs": 0.852427,
+            "lps": 0.949153,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "cleanmel80",
+          "label": "CleanMel-80",
+          "audio": "assets/libritts/utt_1639/02_cleanmel80.wav",
+          "spectrogram": "assets/libritts/utt_1639/02_cleanmel80.png",
+          "metrics": {
+            "ovrl": 3.229071,
+            "utmos": 3.504489,
+            "ecapa": 0.963302,
+            "sbs": 0.960071,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "pguse",
+          "label": "PGUSE",
+          "audio": "assets/libritts/utt_1639/03_pguse.wav",
+          "spectrogram": "assets/libritts/utt_1639/03_pguse.png",
+          "metrics": {
+            "ovrl": 3.216153,
+            "utmos": 4.165967,
+            "ecapa": 0.968631,
+            "sbs": 0.961567,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "flowse",
+          "label": "FlowSE",
+          "audio": "assets/libritts/utt_1639/04_flowse.wav",
+          "spectrogram": "assets/libritts/utt_1639/04_flowse.png",
+          "metrics": {
+            "ovrl": 2.960083,
+            "utmos": 2.533217,
+            "ecapa": 0.849657,
+            "sbs": 0.907373,
+            "lps": 0.983051,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "sense",
+          "label": "SenSE",
+          "audio": "assets/libritts/utt_1639/05_sense.wav",
+          "spectrogram": "assets/libritts/utt_1639/05_sense.png",
+          "metrics": {
+            "ovrl": 3.202246,
+            "utmos": 4.019919,
+            "ecapa": 0.872617,
+            "sbs": 0.960575,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "pase",
+          "label": "PASE",
+          "audio": "assets/libritts/utt_1639/06_pase.wav",
+          "spectrogram": "assets/libritts/utt_1639/06_pase.png",
+          "metrics": {
+            "ovrl": 3.114126,
+            "utmos": 4.134135,
+            "ecapa": 0.826635,
+            "sbs": 0.952509,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "stupase",
+          "label": "StuPASE",
+          "audio": "assets/libritts/utt_1639/07_stupase.wav",
+          "spectrogram": "assets/libritts/utt_1639/07_stupase.png",
+          "metrics": {
+            "ovrl": 3.291677,
+            "utmos": 3.970736,
+            "ecapa": 0.886443,
+            "sbs": 0.946968,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "psgse",
+          "label": "PSG-SE",
+          "audio": "assets/libritts/utt_1639/08_psgse.wav",
+          "spectrogram": "assets/libritts/utt_1639/08_psgse.png",
+          "metrics": {
+            "ovrl": 3.376039,
+            "utmos": 4.184633,
+            "ecapa": 0.947232,
+            "sbs": 0.955959,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        },
+        {
+          "key": "clean",
+          "label": "Dry Clean Reference",
+          "audio": "assets/libritts/utt_1639/09_clean.wav",
+          "spectrogram": "assets/libritts/utt_1639/09_clean.png",
+          "metrics": {
+            "ovrl": 3.24522,
+            "utmos": 4.22318,
+            "ecapa": 1.0,
+            "sbs": 1.0,
+            "lps": 1.0,
+            "wer": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "rank": 1,
       "dataset": "dns1",
       "dataset_label": "DNS1 With-Reverb",
       "id": "dns1_0020",
@@ -82,6 +688,7 @@
       },
       "mean_absolute_difference": 0.08145129680633545,
       "eligible": true,
+      "spectral_review": null,
       "composite_scores": {
         "cleanmel80": 0.5520833333333333,
         "pguse": 0.34375,
@@ -93,7 +700,6 @@
       },
       "psg_composite_margin": 0.28125,
       "psg_composite_rank": 1,
-      "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
@@ -243,6 +849,7 @@
       },
       "mean_absolute_difference": 0.11871778964996338,
       "eligible": true,
+      "spectral_review": null,
       "composite_scores": {
         "cleanmel80": 0.5208333333333333,
         "pguse": 0.16666666666666666,
@@ -254,7 +861,6 @@
       },
       "psg_composite_margin": 0.16666666666666674,
       "psg_composite_rank": 1,
-      "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
@@ -404,6 +1010,7 @@
       },
       "mean_absolute_difference": 0.11210930347442627,
       "eligible": true,
+      "spectral_review": null,
       "composite_scores": {
         "cleanmel80": 0.6041666666666666,
         "pguse": 0.35416666666666663,
@@ -415,7 +1022,6 @@
       },
       "psg_composite_margin": 0.14583333333333326,
       "psg_composite_rank": 1,
-      "similarity_eligible": true,
       "items": [
         {
           "key": "noisy",
@@ -541,489 +1147,6 @@
             "sbs": 1.0,
             "lps": 1.0,
             "wer": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "rank": 1,
-      "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
-      "id": "utt_4441",
-      "snr_db": -1.0,
-      "relative_density": 0.7879158833559218,
-      "absolute_density": 0.755117387312552,
-      "noisy_dnsmos_ovrl": 1.2957779169082642,
-      "both_quality_metrics_best": false,
-      "quality_metric_leads": {
-        "ovrl": -0.061078786849975586,
-        "utmos": 0.030714988708496094
-      },
-      "absolute_metric_differences": {
-        "ovrl": 0.053856611251831055,
-        "utmos": 0.04767036437988281
-      },
-      "mean_absolute_difference": 0.050763487815856934,
-      "eligible": true,
-      "composite_scores": {
-        "cleanmel80": 0.35416666666666663,
-        "pguse": 0.1875,
-        "flowse": 0.041666666666666664,
-        "sense": 0.6979166666666667,
-        "pase": 0.59375,
-        "stupase": 0.7291666666666667,
-        "psgse": 0.8958333333333334
-      },
-      "psg_composite_margin": 0.16666666666666663,
-      "psg_composite_rank": 1,
-      "similarity_eligible": true,
-      "items": [
-        {
-          "key": "noisy",
-          "label": "Noisy",
-          "audio": "assets/libritts/utt_4441/01_noisy.wav",
-          "spectrogram": "assets/libritts/utt_4441/01_noisy.png",
-          "metrics": {
-            "ovrl": 1.295778,
-            "utmos": 1.330087,
-            "ecapa": 0.684721,
-            "sbs": 0.645664,
-            "lps": 0.285714,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "cleanmel80",
-          "label": "CleanMel-80",
-          "audio": "assets/libritts/utt_4441/02_cleanmel80.wav",
-          "spectrogram": "assets/libritts/utt_4441/02_cleanmel80.png",
-          "metrics": {
-            "ovrl": 3.19393,
-            "utmos": 2.864184,
-            "ecapa": 0.541057,
-            "sbs": 0.808962,
-            "lps": 0.821429,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "pguse",
-          "label": "PGUSE",
-          "audio": "assets/libritts/utt_4441/03_pguse.wav",
-          "spectrogram": "assets/libritts/utt_4441/03_pguse.png",
-          "metrics": {
-            "ovrl": 2.705025,
-            "utmos": 2.893127,
-            "ecapa": 0.533913,
-            "sbs": 0.731598,
-            "lps": 0.767857,
-            "wer": 0.230769
-          }
-        },
-        {
-          "key": "flowse",
-          "label": "FlowSE",
-          "audio": "assets/libritts/utt_4441/04_flowse.wav",
-          "spectrogram": "assets/libritts/utt_4441/04_flowse.png",
-          "metrics": {
-            "ovrl": 3.128785,
-            "utmos": 2.266629,
-            "ecapa": 0.414695,
-            "sbs": 0.688717,
-            "lps": 0.428571,
-            "wer": 0.769231
-          }
-        },
-        {
-          "key": "sense",
-          "label": "SenSE",
-          "audio": "assets/libritts/utt_4441/05_sense.wav",
-          "spectrogram": "assets/libritts/utt_4441/05_sense.png",
-          "metrics": {
-            "ovrl": 3.397287,
-            "utmos": 4.138542,
-            "ecapa": 0.618314,
-            "sbs": 0.87462,
-            "lps": 0.946429,
-            "wer": 0.230769
-          }
-        },
-        {
-          "key": "pase",
-          "label": "PASE",
-          "audio": "assets/libritts/utt_4441/06_pase.wav",
-          "spectrogram": "assets/libritts/utt_4441/06_pase.png",
-          "metrics": {
-            "ovrl": 3.277769,
-            "utmos": 4.042255,
-            "ecapa": 0.665993,
-            "sbs": 0.90566,
-            "lps": 0.946429,
-            "wer": 0.230769
-          }
-        },
-        {
-          "key": "stupase",
-          "label": "StuPASE",
-          "audio": "assets/libritts/utt_4441/07_stupase.wav",
-          "spectrogram": "assets/libritts/utt_4441/07_stupase.png",
-          "metrics": {
-            "ovrl": 3.282352,
-            "utmos": 4.121587,
-            "ecapa": 0.632309,
-            "sbs": 0.905011,
-            "lps": 0.964286,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "psgse",
-          "label": "PSG-SE",
-          "audio": "assets/libritts/utt_4441/08_psgse.wav",
-          "spectrogram": "assets/libritts/utt_4441/08_psgse.png",
-          "metrics": {
-            "ovrl": 3.336208,
-            "utmos": 4.169257,
-            "ecapa": 0.706929,
-            "sbs": 0.903572,
-            "lps": 0.982143,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "clean",
-          "label": "Dry Clean Reference",
-          "audio": "assets/libritts/utt_4441/09_clean.wav",
-          "spectrogram": "assets/libritts/utt_4441/09_clean.png",
-          "metrics": {
-            "ovrl": 3.457273,
-            "utmos": 4.31866,
-            "ecapa": 1.0,
-            "sbs": 1.0,
-            "lps": 1.0,
-            "wer": 0.153846
-          }
-        }
-      ]
-    },
-    {
-      "rank": 2,
-      "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
-      "id": "utt_4655",
-      "snr_db": -2.0,
-      "relative_density": 0.7759940216971165,
-      "absolute_density": 0.6800190687247146,
-      "noisy_dnsmos_ovrl": 1.8990567922592163,
-      "both_quality_metrics_best": true,
-      "quality_metric_leads": {
-        "ovrl": 0.006278514862060547,
-        "utmos": 0.024329185485839844
-      },
-      "absolute_metric_differences": {
-        "ovrl": 0.006278514862060547,
-        "utmos": 0.024329185485839844
-      },
-      "mean_absolute_difference": 0.015303850173950195,
-      "eligible": true,
-      "composite_scores": {
-        "cleanmel80": 0.35416666666666663,
-        "pguse": 0.2708333333333333,
-        "flowse": 0.0,
-        "sense": 0.6770833333333333,
-        "pase": 0.5104166666666667,
-        "stupase": 0.78125,
-        "psgse": 0.90625
-      },
-      "psg_composite_margin": 0.125,
-      "psg_composite_rank": 1,
-      "similarity_eligible": true,
-      "items": [
-        {
-          "key": "noisy",
-          "label": "Noisy",
-          "audio": "assets/libritts/utt_4655/01_noisy.wav",
-          "spectrogram": "assets/libritts/utt_4655/01_noisy.png",
-          "metrics": {
-            "ovrl": 1.899057,
-            "utmos": 1.248694,
-            "ecapa": 0.42454,
-            "sbs": 0.607614,
-            "lps": 0.5625,
-            "wer": 0.222222
-          }
-        },
-        {
-          "key": "cleanmel80",
-          "label": "CleanMel-80",
-          "audio": "assets/libritts/utt_4655/02_cleanmel80.wav",
-          "spectrogram": "assets/libritts/utt_4655/02_cleanmel80.png",
-          "metrics": {
-            "ovrl": 2.765455,
-            "utmos": 3.346685,
-            "ecapa": 0.546447,
-            "sbs": 0.776436,
-            "lps": 0.59375,
-            "wer": 0.222222
-          }
-        },
-        {
-          "key": "pguse",
-          "label": "PGUSE",
-          "audio": "assets/libritts/utt_4655/03_pguse.wav",
-          "spectrogram": "assets/libritts/utt_4655/03_pguse.png",
-          "metrics": {
-            "ovrl": 2.802959,
-            "utmos": 3.122814,
-            "ecapa": 0.517556,
-            "sbs": 0.711119,
-            "lps": 0.71875,
-            "wer": 0.333333
-          }
-        },
-        {
-          "key": "flowse",
-          "label": "FlowSE",
-          "audio": "assets/libritts/utt_4655/04_flowse.wav",
-          "spectrogram": "assets/libritts/utt_4655/04_flowse.png",
-          "metrics": {
-            "ovrl": 2.681982,
-            "utmos": 2.72702,
-            "ecapa": 0.309408,
-            "sbs": 0.629669,
-            "lps": -0.0625,
-            "wer": 0.666667
-          }
-        },
-        {
-          "key": "sense",
-          "label": "SenSE",
-          "audio": "assets/libritts/utt_4655/05_sense.wav",
-          "spectrogram": "assets/libritts/utt_4655/05_sense.png",
-          "metrics": {
-            "ovrl": 3.246574,
-            "utmos": 4.17074,
-            "ecapa": 0.533517,
-            "sbs": 0.871496,
-            "lps": 0.96875,
-            "wer": 0.111111
-          }
-        },
-        {
-          "key": "pase",
-          "label": "PASE",
-          "audio": "assets/libritts/utt_4655/06_pase.wav",
-          "spectrogram": "assets/libritts/utt_4655/06_pase.png",
-          "metrics": {
-            "ovrl": 3.203768,
-            "utmos": 4.033789,
-            "ecapa": 0.492082,
-            "sbs": 0.87866,
-            "lps": 0.8125,
-            "wer": 0.111111
-          }
-        },
-        {
-          "key": "stupase",
-          "label": "StuPASE",
-          "audio": "assets/libritts/utt_4655/07_stupase.wav",
-          "spectrogram": "assets/libritts/utt_4655/07_stupase.png",
-          "metrics": {
-            "ovrl": 3.348487,
-            "utmos": 4.434219,
-            "ecapa": 0.443644,
-            "sbs": 0.896994,
-            "lps": 0.96875,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "psgse",
-          "label": "PSG-SE",
-          "audio": "assets/libritts/utt_4655/08_psgse.wav",
-          "spectrogram": "assets/libritts/utt_4655/08_psgse.png",
-          "metrics": {
-            "ovrl": 3.354766,
-            "utmos": 4.458548,
-            "ecapa": 0.529327,
-            "sbs": 0.896087,
-            "lps": 0.96875,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "clean",
-          "label": "Dry Clean Reference",
-          "audio": "assets/libritts/utt_4655/09_clean.wav",
-          "spectrogram": "assets/libritts/utt_4655/09_clean.png",
-          "metrics": {
-            "ovrl": 3.417078,
-            "utmos": 4.265842,
-            "ecapa": 1.0,
-            "sbs": 1.0,
-            "lps": 1.0,
-            "wer": 0.0
-          }
-        }
-      ]
-    },
-    {
-      "rank": 3,
-      "dataset": "libritts",
-      "dataset_label": "LibriTTS test-clean",
-      "id": "utt_4133",
-      "snr_db": -5.0,
-      "relative_density": 0.9061588035019456,
-      "absolute_density": 0.8883653534370947,
-      "noisy_dnsmos_ovrl": 1.1653847694396973,
-      "both_quality_metrics_best": false,
-      "quality_metric_leads": {
-        "ovrl": 0.047380685806274414,
-        "utmos": -0.11710882186889648
-      },
-      "absolute_metric_differences": {
-        "ovrl": 0.047380685806274414,
-        "utmos": 0.0314793586730957
-      },
-      "mean_absolute_difference": 0.03943002223968506,
-      "eligible": true,
-      "composite_scores": {
-        "cleanmel80": 0.41666666666666663,
-        "pguse": 0.14583333333333331,
-        "flowse": 0.041666666666666664,
-        "sense": 0.75,
-        "pase": 0.6666666666666667,
-        "stupase": 0.6979166666666667,
-        "psgse": 0.78125
-      },
-      "psg_composite_margin": 0.03125,
-      "psg_composite_rank": 1,
-      "similarity_eligible": true,
-      "items": [
-        {
-          "key": "noisy",
-          "label": "Noisy",
-          "audio": "assets/libritts/utt_4133/01_noisy.wav",
-          "spectrogram": "assets/libritts/utt_4133/01_noisy.png",
-          "metrics": {
-            "ovrl": 1.165385,
-            "utmos": 1.337754,
-            "ecapa": 0.3799,
-            "sbs": 0.484222,
-            "lps": 0.1,
-            "wer": 0.25
-          }
-        },
-        {
-          "key": "cleanmel80",
-          "label": "CleanMel-80",
-          "audio": "assets/libritts/utt_4133/02_cleanmel80.wav",
-          "spectrogram": "assets/libritts/utt_4133/02_cleanmel80.png",
-          "metrics": {
-            "ovrl": 3.292249,
-            "utmos": 3.087571,
-            "ecapa": 0.378835,
-            "sbs": 0.761614,
-            "lps": 0.825,
-            "wer": 0.5
-          }
-        },
-        {
-          "key": "pguse",
-          "label": "PGUSE",
-          "audio": "assets/libritts/utt_4133/03_pguse.wav",
-          "spectrogram": "assets/libritts/utt_4133/03_pguse.png",
-          "metrics": {
-            "ovrl": 3.223761,
-            "utmos": 2.78392,
-            "ecapa": 0.182976,
-            "sbs": 0.589237,
-            "lps": 0.5,
-            "wer": 0.5
-          }
-        },
-        {
-          "key": "flowse",
-          "label": "FlowSE",
-          "audio": "assets/libritts/utt_4133/04_flowse.wav",
-          "spectrogram": "assets/libritts/utt_4133/04_flowse.png",
-          "metrics": {
-            "ovrl": 3.044762,
-            "utmos": 1.517886,
-            "ecapa": 0.212649,
-            "sbs": 0.593116,
-            "lps": 0.225,
-            "wer": 2.25
-          }
-        },
-        {
-          "key": "sense",
-          "label": "SenSE",
-          "audio": "assets/libritts/utt_4133/05_sense.wav",
-          "spectrogram": "assets/libritts/utt_4133/05_sense.png",
-          "metrics": {
-            "ovrl": 3.290187,
-            "utmos": 4.439121,
-            "ecapa": 0.455046,
-            "sbs": 0.879491,
-            "lps": 0.975,
-            "wer": 0.0
-          }
-        },
-        {
-          "key": "pase",
-          "label": "PASE",
-          "audio": "assets/libritts/utt_4133/06_pase.wav",
-          "spectrogram": "assets/libritts/utt_4133/06_pase.png",
-          "metrics": {
-            "ovrl": 3.329291,
-            "utmos": 4.399035,
-            "ecapa": 0.353121,
-            "sbs": 0.91505,
-            "lps": 0.925,
-            "wer": 0.5
-          }
-        },
-        {
-          "key": "stupase",
-          "label": "StuPASE",
-          "audio": "assets/libritts/utt_4133/07_stupase.wav",
-          "spectrogram": "assets/libritts/utt_4133/07_stupase.png",
-          "metrics": {
-            "ovrl": 3.38929,
-            "utmos": 4.353492,
-            "ecapa": 0.349559,
-            "sbs": 0.885808,
-            "lps": 0.975,
-            "wer": 0.25
-          }
-        },
-        {
-          "key": "psgse",
-          "label": "PSG-SE",
-          "audio": "assets/libritts/utt_4133/08_psgse.wav",
-          "spectrogram": "assets/libritts/utt_4133/08_psgse.png",
-          "metrics": {
-            "ovrl": 3.43667,
-            "utmos": 4.322012,
-            "ecapa": 0.402087,
-            "sbs": 0.885933,
-            "lps": 0.975,
-            "wer": 0.25
-          }
-        },
-        {
-          "key": "clean",
-          "label": "Dry Clean Reference",
-          "audio": "assets/libritts/utt_4133/09_clean.wav",
-          "spectrogram": "assets/libritts/utt_4133/09_clean.png",
-          "metrics": {
-            "ovrl": 3.210499,
-            "utmos": 4.40834,
-            "ecapa": 1.0,
-            "sbs": 1.0,
-            "lps": 1.0,
-            "wer": 0.25
           }
         }
       ]
