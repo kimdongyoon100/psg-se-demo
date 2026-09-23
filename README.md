@@ -6,7 +6,7 @@ Three DNS1 With-Reverb and three Simulated test set examples (derived from Libri
 
 ## Selection and display order
 
-LibriTTS appears first (utt_3418, utt_2198, utt_1639), followed by the unchanged DNS1 With-Reverb examples (dns1_0020, dns1_0043, dns1_0014).
+DNS1 With-Reverb appears first (dns1_0020, dns1_0043, dns1_0014), followed by Simulated test set (utt_3418, utt_2198, utt_1639).
 
 These are deliberately selected qualitative examples, not a random sample or aggregate evaluation. No human listening evaluation was performed for this selection. All six samples have PSG-SE leading all six competing enhanced models on both DNSMOS OVRL and UTMOS. Noisy and Dry Clean Reference are not enhancement models and are excluded from that ranking.
 
@@ -17,12 +17,12 @@ These are deliberately selected qualitative examples, not a random sample or agg
 
 | Display order | Dataset | ID | SNR (dB) | PSG-SE DNSMOS OVRL | PSG-SE UTMOS |
 |---:|---|---|---:|---:|---:|
-| 1 | Simulated test set | utt_3418 | -2 | 3.4076 | 4.1470 |
-| 2 | Simulated test set | utt_2198 | -3 | 3.4382 | 4.1704 |
-| 3 | Simulated test set | utt_1639 | -1 | 3.3760 | 4.1846 |
-| 4 | DNS1 With-Reverb | dns1_0020 | 7 | 3.4394 | 4.2839 |
-| 5 | DNS1 With-Reverb | dns1_0043 | 8 | 3.4453 | 3.6042 |
-| 6 | DNS1 With-Reverb | dns1_0014 | 8 | 3.4533 | 4.3320 |
+| 1 | DNS1 With-Reverb | dns1_0020 | 7 | 3.4394 | 4.2839 |
+| 2 | DNS1 With-Reverb | dns1_0043 | 8 | 3.4453 | 3.6042 |
+| 3 | DNS1 With-Reverb | dns1_0014 | 8 | 3.4533 | 4.3320 |
+| 4 | Simulated test set | utt_3418 | -2 | 3.4076 | 4.1470 |
+| 5 | Simulated test set | utt_2198 | -3 | 3.4382 | 4.1704 |
+| 6 | Simulated test set | utt_1639 | -1 | 3.3760 | 4.1846 |
 
 ## Audio processing
 
