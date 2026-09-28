@@ -9,18 +9,18 @@
     "joint_seed": 34,
     "competitor_seed": 34,
     "posthoc_selected": true,
-    "criterion": "SpkSim and UTMOS strictly above all six competitors; prioritize low SNR"
+    "criterion": "SpkSim and UTMOS strictly above all six competitors. Simulated example 3 uses SNR >= 0 and maximizes min(SpkSim lead / 0.01, UTMOS lead / 0.1); other examples retain low-SNR selection."
   },
   "libritts": {
     "selected_ids": [
       "utt_4797",
       "utt_955",
-      "utt_4775"
+      "utt_1627"
     ],
     "joint_checkpoint": "Joint Layer-only epoch 100",
     "joint_seed": 1,
     "competitor_seed": 34,
     "posthoc_selected": true,
-    "criterion": "SpkSim and UTMOS strictly above all six competitors; prioritize low SNR"
+    "criterion": "SpkSim and UTMOS strictly above all six competitors. Simulated example 3 uses SNR >= 0 and maximizes min(SpkSim lead / 0.01, UTMOS lead / 0.1); other examples retain low-SNR selection."
   }
 }
