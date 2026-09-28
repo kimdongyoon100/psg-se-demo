@@ -406,82 +406,82 @@
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "noisy",
-    "source_peak": 0.015655517578125,
-    "noisy_peak": 0.015655517578125,
+    "source_peak": 0.02117919921875,
+    "noisy_peak": 0.02117919921875,
     "scale": 1.0,
     "changed": false
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "cleanmel80",
-    "source_peak": 0.015625,
-    "noisy_peak": 0.015655517578125,
-    "scale": 1.001953125,
-    "changed": true
+    "source_peak": 0.02117919921875,
+    "noisy_peak": 0.02117919921875,
+    "scale": 1.0,
+    "changed": false
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "pguse",
-    "source_peak": 0.015655517578125,
-    "noisy_peak": 0.015655517578125,
+    "source_peak": 0.02117919921875,
+    "noisy_peak": 0.02117919921875,
     "scale": 1.0,
     "changed": false
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "flowse",
-    "source_peak": 0.57720947265625,
-    "noisy_peak": 0.015655517578125,
-    "scale": 0.027122766204927568,
+    "source_peak": 0.5621337890625,
+    "noisy_peak": 0.02117919921875,
+    "scale": 0.03767643865363735,
     "changed": true
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "sense",
-    "source_peak": 0.020782470703125,
-    "noisy_peak": 0.015655517578125,
-    "scale": 0.7533039647577092,
+    "source_peak": 0.017974853515625,
+    "noisy_peak": 0.02117919921875,
+    "scale": 1.1782682512733447,
     "changed": true
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "pase",
-    "source_peak": 0.015625,
-    "noisy_peak": 0.015655517578125,
-    "scale": 1.001953125,
+    "source_peak": 0.02117919921875,
+    "noisy_peak": 0.02117919921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "libritts",
+    "id": "utt_4775",
+    "model": "stupase",
+    "source_peak": 0.02117919921875,
+    "noisy_peak": 0.02117919921875,
+    "scale": 1.0,
+    "changed": false
+  },
+  {
+    "dataset": "libritts",
+    "id": "utt_4775",
+    "model": "psgse",
+    "source_peak": 0.021148681640625,
+    "noisy_peak": 0.02117919921875,
+    "scale": 1.0014430014430014,
     "changed": true
   },
   {
     "dataset": "libritts",
-    "id": "utt_4636",
-    "model": "stupase",
-    "source_peak": 0.015655517578125,
-    "noisy_peak": 0.015655517578125,
-    "scale": 1.0,
-    "changed": false
-  },
-  {
-    "dataset": "libritts",
-    "id": "utt_4636",
-    "model": "psgse",
-    "source_peak": 0.015655517578125,
-    "noisy_peak": 0.015655517578125,
-    "scale": 1.0,
-    "changed": false
-  },
-  {
-    "dataset": "libritts",
-    "id": "utt_4636",
+    "id": "utt_4775",
     "model": "clean",
-    "source_peak": 0.81951904296875,
-    "noisy_peak": 0.015655517578125,
+    "source_peak": 0.928070068359375,
+    "noisy_peak": 0.02117919921875,
     "scale": 1.0,
     "changed": false
   }

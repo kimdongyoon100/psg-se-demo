@@ -9,7 +9,7 @@ PSG-SE audio is **Joint Layer-only epoch 100**, not the previous frozen I2 w/o G
 | Dataset | Joint seed | Competitor seed | IDs | SNR (dB) |
 |---|---:|---:|---|---|
 | DNS1 With-Reverb | 34 | 34 | dns1_0050, dns1_0112, dns1_0169 | 1, 3, 6 |
-| Simulated LibriTTS | 1 | 34 | utt_4797, utt_955, utt_4636 | -5, -5, -5 |
+| Simulated LibriTTS | 1 | 34 | utt_4797, utt_955, utt_4775 | -5, -5, -5 |
 
 These are post-hoc illustrative examples selected because Joint ECAPA SpkSim and UTMOS exceed all six displayed competitors, with low SNR prioritized. They are not a random sample, aggregate performance evidence, or a controlled matched-seed LibriTTS comparison. No listening validation has been performed. Dry clean/noisy are excluded from model ranking.
 

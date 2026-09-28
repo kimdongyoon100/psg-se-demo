@@ -586,103 +586,103 @@
       "rank": 3,
       "dataset": "libritts",
       "dataset_label": "Simulated test set",
-      "id": "utt_4636",
+      "id": "utt_4775",
       "snr_db": -5,
       "joint_seed": 1,
       "competitor_seed": 34,
       "metric_leads": {
-        "ecapa": 0.04371368890000005,
-        "utmos": 0.2777886390686035
+        "ecapa": 0.034289240800000065,
+        "utmos": 0.22053003311157227
       },
       "items": [
         {
           "key": "noisy",
           "label": "Noisy",
-          "audio": "assets_joint_layer100/libritts/utt_4636/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/01_noisy.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/01_noisy.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/01_noisy.png",
           "metrics": {
-            "ecapa": 0.8399980068,
-            "utmos": 1.2963378429412842
+            "ecapa": 0.7557278275,
+            "utmos": 1.246018648147583
           }
         },
         {
           "key": "cleanmel80",
           "label": "CleanMel",
-          "audio": "assets_joint_layer100/libritts/utt_4636/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/02_cleanmel80.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/02_cleanmel80.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/02_cleanmel80.png",
           "metrics": {
-            "ecapa": 0.8780905008,
-            "utmos": 2.677945613861084
+            "ecapa": 0.8236602545,
+            "utmos": 3.3750643730163574
           }
         },
         {
           "key": "pguse",
           "label": "PGUSE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/03_pguse.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/03_pguse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/03_pguse.png",
           "metrics": {
-            "ecapa": 0.8195178509,
-            "utmos": 1.422393560409546
+            "ecapa": 0.7680587769,
+            "utmos": 1.3482731580734253
           }
         },
         {
           "key": "flowse",
           "label": "FlowSE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/04_flowse.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/04_flowse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/04_flowse.png",
           "metrics": {
-            "ecapa": 0.8000514507,
-            "utmos": 1.987575650215149
+            "ecapa": 0.4270908535,
+            "utmos": 2.0902609825134277
           }
         },
         {
           "key": "sense",
           "label": "SenSE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/05_sense.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/05_sense.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/05_sense.png",
           "metrics": {
-            "ecapa": 0.8579458594,
-            "utmos": 3.064342737197876
+            "ecapa": 0.8412870169,
+            "utmos": 3.4323792457580566
           }
         },
         {
           "key": "pase",
           "label": "PASE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/06_pase.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/06_pase.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/06_pase.png",
           "metrics": {
-            "ecapa": 0.633867085,
-            "utmos": 1.6535851955413818
+            "ecapa": 0.4513540864,
+            "utmos": 1.6260703802108765
           }
         },
         {
           "key": "stupase",
           "label": "StuPASE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/07_stupase.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/07_stupase.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/07_stupase.png",
           "metrics": {
-            "ecapa": 0.7965523005,
-            "utmos": 3.240133285522461
+            "ecapa": 0.7037067413,
+            "utmos": 3.803156852722168
           }
         },
         {
           "key": "psgse",
           "label": "PSG-SE",
-          "audio": "assets_joint_layer100/libritts/utt_4636/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/08_psgse.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/08_psgse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/08_psgse.png",
           "metrics": {
-            "ecapa": 0.9218041897,
-            "utmos": 3.5179219245910645
+            "ecapa": 0.8755762577,
+            "utmos": 4.02368688583374
           }
         },
         {
           "key": "clean",
           "label": "Dry Clean Reference",
-          "audio": "assets_joint_layer100/libritts/utt_4636/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4636/09_clean.png",
+          "audio": "assets_joint_layer100/libritts/utt_4775/09_clean.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4775/09_clean.png",
           "metrics": {
             "ecapa": 1.0,
-            "utmos": 4.08541202545166
+            "utmos": 4.42935848236084
           }
         }
       ]
