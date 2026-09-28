@@ -590,6 +590,8 @@
       "snr_db": 9,
       "joint_seed": 1,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +30.42 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 33.19959473150963,
       "metric_leads": {
         "ecapa": 0.051819860900000014,
         "utmos": 0.541053295135498
@@ -599,7 +601,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/libritts/utt_3235/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/01_noisy_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8047943711,
             "utmos": 1.2800596952438354
@@ -609,7 +612,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8404009342,
             "utmos": 2.6088271141052246
@@ -619,7 +623,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/03_pguse_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8488868475,
             "utmos": 1.410668134689331
@@ -629,7 +634,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/04_flowse_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8151862025,
             "utmos": 1.651660680770874
@@ -639,7 +645,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/05_sense.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/05_sense_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8080704212,
             "utmos": 3.4147520065307617
@@ -649,7 +656,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/libritts/utt_3235/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/06_pase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/06_pase_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.6609812379,
             "utmos": 1.4744069576263428
@@ -659,7 +667,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/libritts/utt_3235/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/07_stupase_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8779768348,
             "utmos": 3.35314679145813
@@ -669,7 +678,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/libritts/utt_3235/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/08_psgse_display_v2.png",
+          "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.9297966957,
             "utmos": 3.9558053016662598
@@ -679,7 +689,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/libritts/utt_3235/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/09_clean.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/09_clean_display_v2.png",
+          "spectrogram_display_gain": 1.2520729051239923,
           "metrics": {
             "ecapa": 1.0,
             "utmos": 4.233757019042969

@@ -21,6 +21,8 @@ Enhanced audio is matched to the noisy waveform peak; noisy and dry clean remain
 
 ## Rebuild locally
 
+Simulated Example 3 uses display-only scaling: the clean reference peak is first matched to the noisy peak, then all nine visualization signals receive the same gain (approximately +30.42 dB). The color limits remain -80 to 0 dB. No audio file or metric is changed. This differs from the absolute-amplitude plots in the other five examples and is noted visibly on the page.
+
 `/home/hyuns/miniconda3/envs/kdy/bin/python build_joint_demo.py`
 
 Previous assets are retained for recovery but are not referenced by the current manifest. The new files are under assets_joint_layer100/. Publication checkout: /home/hyuns/psg-se-demo.

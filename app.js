@@ -32,10 +32,18 @@ function sampleSection(example) {
 
   const heading = document.createElement("h2");
   heading.textContent = `${example.dataset_label} — Example ${example.rank}`;
+  const note = document.createElement("p");
+  if (example.spectrogram_note) {
+    note.textContent = example.spectrogram_note;
+    note.style.fontSize = "12px";
+    note.style.color = "#475569";
+  }
   const grid = document.createElement("div");
   grid.className = "audio-grid";
   example.items.forEach((item) => grid.append(audioCard(item)));
-  section.append(heading, grid);
+  section.append(heading);
+  if (example.spectrogram_note) section.append(note);
+  section.append(grid);
   return section;
 }
 
