@@ -2,7 +2,7 @@
   "title": "PSG-SE Audio Demo",
   "model_checkpoint": "Joint Layer-only-100",
   "cherry_picked": true,
-  "selection_rule": "Post-hoc illustrative samples with Joint ECAPA and UTMOS higher than six shown competitors. Simulated example 3: SNR >= 0, largest minimum normalized lead (ECAPA / 0.01, UTMOS / 0.1). Other examples retain low-SNR selection. Not representative aggregate evidence.",
+  "selection_rule": "Post-hoc illustrative samples with Joint ECAPA and UTMOS higher than six shown competitors. Simulated example 3 is user-selected utt_3235 (9 dB) from listening candidates. Other examples retain low-SNR selection. Not representative aggregate evidence.",
   "inference_seeds": {
     "dns1": {
       "joint": 34,
@@ -586,103 +586,103 @@
       "rank": 3,
       "dataset": "libritts",
       "dataset_label": "Simulated test set",
-      "id": "utt_1627",
-      "snr_db": 7,
+      "id": "utt_3235",
+      "snr_db": 9,
       "joint_seed": 1,
       "competitor_seed": 34,
       "metric_leads": {
-        "ecapa": 0.07273769379999995,
-        "utmos": 0.5889322757720947
+        "ecapa": 0.051819860900000014,
+        "utmos": 0.541053295135498
       },
       "items": [
         {
           "key": "noisy",
           "label": "Noisy",
-          "audio": "assets_joint_layer100/libritts/utt_1627/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/01_noisy.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/01_noisy.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/01_noisy.png",
           "metrics": {
-            "ecapa": 0.8028520346,
-            "utmos": 1.4208813905715942
+            "ecapa": 0.8047943711,
+            "utmos": 1.2800596952438354
           }
         },
         {
           "key": "cleanmel80",
           "label": "CleanMel",
-          "audio": "assets_joint_layer100/libritts/utt_1627/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/02_cleanmel80.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80.png",
           "metrics": {
-            "ecapa": 0.8198722601,
-            "utmos": 1.6604187488555908
+            "ecapa": 0.8404009342,
+            "utmos": 2.6088271141052246
           }
         },
         {
           "key": "pguse",
           "label": "PGUSE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/03_pguse.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/03_pguse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/03_pguse.png",
           "metrics": {
-            "ecapa": 0.8102392554,
-            "utmos": 1.253504991531372
+            "ecapa": 0.8488868475,
+            "utmos": 1.410668134689331
           }
         },
         {
           "key": "flowse",
           "label": "FlowSE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/04_flowse.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/04_flowse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/04_flowse.png",
           "metrics": {
-            "ecapa": 0.7345198989,
-            "utmos": 1.6351146697998047
+            "ecapa": 0.8151862025,
+            "utmos": 1.651660680770874
           }
         },
         {
           "key": "sense",
           "label": "SenSE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/05_sense.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/05_sense.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/05_sense.png",
           "metrics": {
-            "ecapa": 0.7997252345,
-            "utmos": 1.4277215003967285
+            "ecapa": 0.8080704212,
+            "utmos": 3.4147520065307617
           }
         },
         {
           "key": "pase",
           "label": "PASE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/06_pase.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/06_pase.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/06_pase.png",
           "metrics": {
-            "ecapa": 0.2948392332,
-            "utmos": 1.3491637706756592
+            "ecapa": 0.6609812379,
+            "utmos": 1.4744069576263428
           }
         },
         {
           "key": "stupase",
           "label": "StuPASE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/07_stupase.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/07_stupase.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/07_stupase.png",
           "metrics": {
-            "ecapa": 0.7423663139,
-            "utmos": 2.7084288597106934
+            "ecapa": 0.8779768348,
+            "utmos": 3.35314679145813
           }
         },
         {
           "key": "psgse",
           "label": "PSG-SE",
-          "audio": "assets_joint_layer100/libritts/utt_1627/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/08_psgse.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/08_psgse.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/08_psgse.png",
           "metrics": {
-            "ecapa": 0.8926099539,
-            "utmos": 3.297361135482788
+            "ecapa": 0.9297966957,
+            "utmos": 3.9558053016662598
           }
         },
         {
           "key": "clean",
           "label": "Dry Clean Reference",
-          "audio": "assets_joint_layer100/libritts/utt_1627/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_1627/09_clean.png",
+          "audio": "assets_joint_layer100/libritts/utt_3235/09_clean.wav",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/09_clean.png",
           "metrics": {
-            "ecapa": 1.0000002384,
-            "utmos": 4.444762229919434
+            "ecapa": 1.0,
+            "utmos": 4.233757019042969
           }
         }
       ]
