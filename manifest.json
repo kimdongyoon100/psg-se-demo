@@ -65,6 +65,8 @@
       "snr_db": 1.0,
       "joint_seed": 34,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +0.76 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 1.0915026148362812,
       "metric_leads": {
         "ecapa": 0.020494103499999916,
         "utmos": 0.14818429946899414
@@ -74,7 +76,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/dns1/dns1_0050/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/01_noisy_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.8321313858,
             "utmos": 1.2654987573623657
@@ -84,7 +87,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/dns1/dns1_0050/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/02_cleanmel80_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.8222067952,
             "utmos": 2.8785133361816406
@@ -94,7 +98,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/03_pguse_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.7862561345,
             "utmos": 2.1259899139404297
@@ -104,7 +109,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/04_flowse_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.784501493,
             "utmos": 1.303407073020935
@@ -114,7 +120,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/05_sense.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/05_sense_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.8519095182,
             "utmos": 4.0446038246154785
@@ -124,7 +131,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/06_pase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/06_pase_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.8452263474,
             "utmos": 1.6901980638504028
@@ -134,7 +142,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/07_stupase_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.7611912489,
             "utmos": 3.831501007080078
@@ -144,7 +153,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/dns1/dns1_0050/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/08_psgse_display_all_v3.png",
+          "spectrogram_display_gain": 1.0915026148362812,
           "metrics": {
             "ecapa": 0.8724036217,
             "utmos": 4.192788124084473
@@ -154,7 +164,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/dns1/dns1_0050/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/09_clean.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0050/09_clean_display_all_v3.png",
+          "spectrogram_display_gain": 1.151532190047793,
           "metrics": {
             "ecapa": 1.0,
             "utmos": 4.444860458374023
@@ -170,6 +181,8 @@
       "snr_db": 3.0,
       "joint_seed": 34,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +9.88 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 3.1180892568274814,
       "metric_leads": {
         "ecapa": 0.04316574340000001,
         "utmos": 0.11624836921691895
@@ -179,7 +192,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/dns1/dns1_0112/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/01_noisy_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.6989392638,
             "utmos": 1.3177220821380615
@@ -189,7 +203,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/dns1/dns1_0112/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/02_cleanmel80_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.8877159357,
             "utmos": 3.5029263496398926
@@ -199,7 +214,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/03_pguse_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.7814576626,
             "utmos": 1.832208514213562
@@ -209,7 +225,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/04_flowse_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.7999022603,
             "utmos": 1.41891348361969
@@ -219,7 +236,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/05_sense.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/05_sense_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.8751895428,
             "utmos": 3.3575022220611572
@@ -229,7 +247,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/06_pase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/06_pase_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.6729990244,
             "utmos": 1.4157624244689941
@@ -239,7 +258,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/07_stupase_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.7107105851,
             "utmos": 3.685136318206787
@@ -249,7 +269,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/dns1/dns1_0112/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/08_psgse_display_all_v3.png",
+          "spectrogram_display_gain": 3.1180892568274814,
           "metrics": {
             "ecapa": 0.9308816791,
             "utmos": 3.801384687423706
@@ -259,7 +280,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/dns1/dns1_0112/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/09_clean.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0112/09_clean_display_all_v3.png",
+          "spectrogram_display_gain": 2.7999658207297276,
           "metrics": {
             "ecapa": 1.0,
             "utmos": 4.216208457946777
@@ -275,6 +297,8 @@
       "snr_db": 6.0,
       "joint_seed": 34,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +1.52 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 1.190957330813404,
       "metric_leads": {
         "ecapa": 0.04145622250000003,
         "utmos": 0.2195723056793213
@@ -284,7 +308,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/dns1/dns1_0169/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/01_noisy_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6612506509,
             "utmos": 1.8801053762435913
@@ -294,7 +319,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/dns1/dns1_0169/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/02_cleanmel80_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6133977175,
             "utmos": 2.295191764831543
@@ -304,7 +330,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/03_pguse_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6101660728,
             "utmos": 1.3481812477111816
@@ -314,7 +341,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/04_flowse_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.3707558811,
             "utmos": 1.2456008195877075
@@ -324,7 +352,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/05_sense.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/05_sense_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6872144938,
             "utmos": 3.7675981521606445
@@ -334,7 +363,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/06_pase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/06_pase_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6524067521,
             "utmos": 1.4377243518829346
@@ -344,7 +374,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/07_stupase_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.6342859268,
             "utmos": 3.9642369747161865
@@ -354,7 +385,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/dns1/dns1_0169/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/08_psgse_display_all_v3.png",
+          "spectrogram_display_gain": 1.190957330813404,
           "metrics": {
             "ecapa": 0.7286707163,
             "utmos": 4.183809280395508
@@ -364,7 +396,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/dns1/dns1_0169/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/09_clean.png",
+          "spectrogram": "assets_joint_layer100/dns1/dns1_0169/09_clean_display_all_v3.png",
+          "spectrogram_display_gain": 1.0299544240138299,
           "metrics": {
             "ecapa": 0.9999999404,
             "utmos": 4.501677513122559
@@ -380,6 +413,8 @@
       "snr_db": -5,
       "joint_seed": 1,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +2.12 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 1.2763603786078759,
       "metric_leads": {
         "ecapa": 0.06845712659999992,
         "utmos": 0.36782169342041016
@@ -389,7 +424,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/libritts/utt_4797/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/01_noisy_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.4671990275,
             "utmos": 1.308239459991455
@@ -399,7 +435,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/libritts/utt_4797/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/02_cleanmel80_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.6025279164,
             "utmos": 2.741076707839966
@@ -409,7 +446,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/libritts/utt_4797/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/03_pguse_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.4448503852,
             "utmos": 2.35066294670105
@@ -419,7 +457,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/libritts/utt_4797/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/04_flowse_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.4091640115,
             "utmos": 1.2581284046173096
@@ -429,7 +468,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/libritts/utt_4797/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/05_sense.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/05_sense_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.5575250983,
             "utmos": 2.6679811477661133
@@ -439,7 +479,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/libritts/utt_4797/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/06_pase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/06_pase_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.5016109943,
             "utmos": 3.16064453125
@@ -449,7 +490,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/libritts/utt_4797/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/07_stupase_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.500001967,
             "utmos": 3.659719467163086
@@ -459,7 +501,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/libritts/utt_4797/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/08_psgse_display_all_v3.png",
+          "spectrogram_display_gain": 1.2763603786078759,
           "metrics": {
             "ecapa": 0.670985043,
             "utmos": 4.027541160583496
@@ -469,7 +512,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/libritts/utt_4797/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_4797/09_clean.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_4797/09_clean_display_all_v3.png",
+          "spectrogram_display_gain": 1.5775081840939726,
           "metrics": {
             "ecapa": 1.0,
             "utmos": 4.014889717102051
@@ -485,6 +529,8 @@
       "snr_db": -5,
       "joint_seed": 1,
       "competitor_seed": 34,
+      "spectrogram_note": "Visualization only: clean peak matched to noisy, then the same +2.82 dB display gain applied to all panels. Audio is unchanged.",
+      "shared_spectrogram_gain": 1.382907786452838,
       "metric_leads": {
         "ecapa": 0.0451350211999999,
         "utmos": 0.2903130054473877
@@ -494,7 +540,8 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/libritts/utt_955/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/01_noisy.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/01_noisy_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.5670157671,
             "utmos": 1.473645806312561
@@ -504,7 +551,8 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/libritts/utt_955/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/02_cleanmel80.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/02_cleanmel80_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.4024862349,
             "utmos": 2.6846230030059814
@@ -514,7 +562,8 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/libritts/utt_955/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/03_pguse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/03_pguse_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.4421862066,
             "utmos": 2.765575647354126
@@ -524,7 +573,8 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/libritts/utt_955/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/04_flowse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/04_flowse_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.2570458353,
             "utmos": 1.7849475145339966
@@ -534,7 +584,8 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/libritts/utt_955/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/05_sense.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/05_sense_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.4416648149,
             "utmos": 3.8185791969299316
@@ -544,7 +595,8 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/libritts/utt_955/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/06_pase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/06_pase_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.5643311143,
             "utmos": 3.6003124713897705
@@ -554,7 +606,8 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/libritts/utt_955/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/07_stupase.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/07_stupase_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.5532975793,
             "utmos": 3.8472087383270264
@@ -564,7 +617,8 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/libritts/utt_955/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/08_psgse.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/08_psgse_display_all_v3.png",
+          "spectrogram_display_gain": 1.382907786452838,
           "metrics": {
             "ecapa": 0.6094661355,
             "utmos": 4.137521743774414
@@ -574,7 +628,8 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/libritts/utt_955/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_955/09_clean.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_955/09_clean_display_all_v3.png",
+          "spectrogram_display_gain": 2.3967232299590404,
           "metrics": {
             "ecapa": 1.0000001192,
             "utmos": 4.191117286682129
@@ -601,7 +656,7 @@
           "key": "noisy",
           "label": "Noisy",
           "audio": "assets_joint_layer100/libritts/utt_3235/01_noisy.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/01_noisy_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/01_noisy_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8047943711,
@@ -612,7 +667,7 @@
           "key": "cleanmel80",
           "label": "CleanMel",
           "audio": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/02_cleanmel80_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8404009342,
@@ -623,7 +678,7 @@
           "key": "pguse",
           "label": "PGUSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/03_pguse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/03_pguse_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/03_pguse_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8488868475,
@@ -634,7 +689,7 @@
           "key": "flowse",
           "label": "FlowSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/04_flowse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/04_flowse_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/04_flowse_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8151862025,
@@ -645,7 +700,7 @@
           "key": "sense",
           "label": "SenSE",
           "audio": "assets_joint_layer100/libritts/utt_3235/05_sense.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/05_sense_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/05_sense_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8080704212,
@@ -656,7 +711,7 @@
           "key": "pase",
           "label": "PASE",
           "audio": "assets_joint_layer100/libritts/utt_3235/06_pase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/06_pase_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/06_pase_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.6609812379,
@@ -667,7 +722,7 @@
           "key": "stupase",
           "label": "StuPASE",
           "audio": "assets_joint_layer100/libritts/utt_3235/07_stupase.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/07_stupase_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/07_stupase_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.8779768348,
@@ -678,7 +733,7 @@
           "key": "psgse",
           "label": "PSG-SE",
           "audio": "assets_joint_layer100/libritts/utt_3235/08_psgse.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/08_psgse_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/08_psgse_display_all_v3.png",
           "spectrogram_display_gain": 33.19959473150963,
           "metrics": {
             "ecapa": 0.9297966957,
@@ -689,7 +744,7 @@
           "key": "clean",
           "label": "Dry Clean Reference",
           "audio": "assets_joint_layer100/libritts/utt_3235/09_clean.wav",
-          "spectrogram": "assets_joint_layer100/libritts/utt_3235/09_clean_display_v2.png",
+          "spectrogram": "assets_joint_layer100/libritts/utt_3235/09_clean_display_all_v3.png",
           "spectrogram_display_gain": 1.2520729051239923,
           "metrics": {
             "ecapa": 1.0,
